@@ -1,0 +1,62 @@
+{
+  "nav": {
+    "about": "Artist",
+    "gallery": "Works",
+    "process": "Studio",
+    "exhibitions": "Exhibitions",
+    "contact": "Contact"
+  },
+  "hero": {
+    "kicker": "Painting · Oil & Mixed Media",
+    "title": "Elif Kaya",
+    "subtitle": "I work on the trace that light leaves behind.",
+    "scroll": "Scroll down"
+  },
+  "about": {
+    "kicker": "Artist",
+    "title": "Color speaks the language of memory",
+    "body": "Born in Istanbul, she built her studio in Kuzguncuk. Working in oil and mixed media for over two decades, Elif Kaya's work carries the emotional residue of everyday moments onto large-scale canvases.",
+    "stat1Value": "20+",
+    "stat1Label": "Years of practice",
+    "stat2Value": "140",
+    "stat2Label": "Works completed",
+    "stat3Value": "12",
+    "stat3Label": "Solo exhibitions"
+  },
+  "gallery": {
+    "kicker": "Selected Works",
+    "title": "Works",
+    "viewWork": "View work"
+  },
+  "process": {
+    "kicker": "Studio",
+    "title": "Every canvas begins with silence",
+    "body": "Each piece takes shape through days of observation and charcoal studies. Layers of color accumulate over weeks; the final brushstroke lands months after the first idea.",
+    "step1Title": "Observation",
+    "step1Body": "Light, texture, and the moment — recorded in the sketchbook.",
+    "step2Title": "Layering",
+    "step2Body": "Ground colors are built up over weeks of patient work.",
+    "step3Title": "Resolution",
+    "step3Body": "The canvas is reworked until the composition settles."
+  },
+  "exhibitions": {
+    "kicker": "Exhibitions",
+    "title": "Exhibitions & Awards",
+    "items": [
+      { "year": "2024", "title": "Silent Light", "place": "Mixer Gallery, Istanbul" },
+      { "year": "2022", "title": "Interior Spaces", "place": "Zilberman Gallery, Istanbul" },
+      { "year": "2020", "title": "Layers of Memory", "place": "Art Basel Satellite, Basel" },
+      { "year": "2018", "title": "Young Artist Award", "place": "Istanbul Biennial" }
+    ]
+  },
+  "contact": {
+    "kicker": "Contact",
+    "title": "Let's talk about a piece",
+    "body": "For commissions, exhibitions, or collaborations, reach out to the studio directly.",
+    "cta": "Send an email",
+    "location": "Kuzguncuk, Istanbul"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

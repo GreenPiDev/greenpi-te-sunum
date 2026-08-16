@@ -1,0 +1,34 @@
+import { useState } from 'react'
+import { Nav } from './components/layout/Nav'
+import { Cursor } from './components/layout/Cursor'
+import { PageLoader } from './components/layout/PageLoader'
+import { Hero } from './components/sections/Hero'
+import { About } from './components/sections/About'
+import { Gallery } from './components/sections/Gallery'
+import { Process } from './components/sections/Process'
+import { Exhibitions } from './components/sections/Exhibitions'
+import { Contact } from './components/sections/Contact'
+import { useSmoothScroll } from './lib/hooks/useSmoothScroll'
+
+function App() {
+  const [loading, setLoading] = useState(true)
+  useSmoothScroll()
+
+  return (
+    <>
+      {loading && <PageLoader onComplete={() => setLoading(false)} />}
+      <Cursor />
+      <Nav />
+      <main>
+        <Hero />
+        <About />
+        <Gallery />
+        <Process />
+        <Exhibitions />
+        <Contact />
+      </main>
+    </>
+  )
+}
+
+export default App

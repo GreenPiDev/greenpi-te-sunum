@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", "Georgia", serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  --color-ink: #0b0a09;
+  --color-canvas: #f5f0e8;
+  --color-ember: #c1552c;
+  --color-ember-soft: #e8a26f;
+  --color-stone: #9a9188;
+  --color-stone-dim: #4a453f;
+}
+
+html,
+body {
+  background-color: var(--color-ink);
+  color: var(--color-canvas);
+  overscroll-behavior: none;
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-display {
+  font-family: var(--font-display);
+}
+
+::selection {
+  background: var(--color-ember);
+  color: var(--color-ink);
+}
+
+/* Lenis smooth scroll gerektirdiği temel sınıflar */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth scroll-behavior {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}

@@ -1,0 +1,62 @@
+{
+  "nav": {
+    "about": "Sanatçı",
+    "gallery": "Eserler",
+    "process": "Atölye",
+    "exhibitions": "Sergiler",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "kicker": "Resim · Yağlıboya & Karışık Teknik",
+    "title": "Elif Kaya",
+    "subtitle": "Işığın bıraktığı iz üzerine çalışıyorum.",
+    "scroll": "Aşağı kaydır"
+  },
+  "about": {
+    "kicker": "Sanatçı",
+    "title": "Renk, hafızanın diliyle konuşur",
+    "body": "İstanbul'da doğdu, atölyesini Kuzguncuk'ta kurdu. Yirmi yılı aşkın süredir yağlıboya ve karışık teknik üzerine çalışan Elif Kaya'nın eserleri, gündelik anların bıraktığı duygusal izleri büyük tuvallere taşıyor.",
+    "stat1Value": "20+",
+    "stat1Label": "Yıllık pratik",
+    "stat2Value": "140",
+    "stat2Label": "Tamamlanan eser",
+    "stat3Value": "12",
+    "stat3Label": "Kişisel sergi"
+  },
+  "gallery": {
+    "kicker": "Seçilmiş Eserler",
+    "title": "Eserler",
+    "viewWork": "Esere bak"
+  },
+  "process": {
+    "kicker": "Atölye",
+    "title": "Tuval, önce sessizlikle başlar",
+    "body": "Her eser, günlerce süren gözlem ve karakalem denemeleriyle şekillenir. Renk katmanları haftalar içinde birikir; son fırça darbesi, ilk fikirden aylar sonra atılır.",
+    "step1Title": "Gözlem",
+    "step1Body": "Işık, doku ve anın kaydı — karakalem defterinde.",
+    "step2Title": "Katman",
+    "step2Body": "Zemin renkleri, haftalar süren sabırla üst üste eklenir.",
+    "step3Title": "Çözüm",
+    "step3Body": "Kompozisyon netleşene kadar tuval yeniden ele alınır."
+  },
+  "exhibitions": {
+    "kicker": "Sergiler",
+    "title": "Sergi ve Ödüller",
+    "items": [
+      { "year": "2024", "title": "Sessiz Işık", "place": "Mixer Gallery, İstanbul" },
+      { "year": "2022", "title": "İç Mekanlar", "place": "Galeri Zilberman, İstanbul" },
+      { "year": "2020", "title": "Bellek Katmanları", "place": "Art Basel Satellite, Basel" },
+      { "year": "2018", "title": "Genç Sanat Ödülü", "place": "İstanbul Bienali" }
+    ]
+  },
+  "contact": {
+    "kicker": "İletişim",
+    "title": "Bir eser hakkında konuşalım",
+    "body": "Sipariş, sergi veya işbirliği talepleri için atölyeyle doğrudan iletişime geçin.",
+    "cta": "E-posta gönder",
+    "location": "Kuzguncuk, İstanbul"
+  },
+  "footer": {
+    "rights": "Tüm hakları saklıdır."
+  }
+}
