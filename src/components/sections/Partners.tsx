@@ -1,5 +1,6 @@
 import { useLayoutEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
+import clsx from 'clsx'
 import { gsap } from '../../lib/gsapConfig'
 import { partnerGroups } from '../../data/partners'
 
@@ -43,7 +44,13 @@ export function Partners() {
         {partnerGroups.map((group) => (
           <div key={group.id} className="mt-16 sm:mt-20">
             <h3 className="text-xs uppercase tracking-[0.3em] text-stone-dim">{group.label[lang]}</h3>
-            <div className="mt-6 grid grid-cols-1 gap-px overflow-hidden rounded-sm bg-ink/15 sm:grid-cols-2 lg:grid-cols-3">
+            <div
+              className={clsx(
+                'mt-6 grid grid-cols-1 gap-px overflow-hidden rounded-sm bg-ink/15',
+                group.partners.length >= 2 && 'sm:grid-cols-2',
+                group.partners.length >= 3 && 'lg:grid-cols-3',
+              )}
+            >
               {group.partners.map((partner) => (
                 <div key={partner.name} data-reveal className="flex flex-col gap-3 bg-canvas p-6 sm:p-7">
                   {partner.logo ? (

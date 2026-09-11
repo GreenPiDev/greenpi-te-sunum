@@ -38,9 +38,17 @@ export function PageLoader({ onComplete }: { onComplete: () => void }) {
   return (
     <div ref={rootRef} className="fixed inset-0 z-[100]">
       <div ref={curtainRef} className="absolute inset-0 flex items-end bg-ink px-6 py-8 sm:px-10 sm:py-12">
-        <span className="font-display text-6xl text-canvas sm:text-8xl">
+        <span className="font-display relative text-6xl text-canvas sm:text-8xl">
           {progress}
           <span className="text-2xl align-top text-stone sm:text-3xl">%</span>
+          <span
+            aria-hidden="true"
+            className="absolute inset-0 text-green"
+            style={{ clipPath: `inset(${100 - progress}% 0 0 0)` }}
+          >
+            {progress}
+            <span className="text-2xl align-top sm:text-3xl">%</span>
+          </span>
         </span>
       </div>
     </div>
