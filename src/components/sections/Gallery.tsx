@@ -57,7 +57,7 @@ export function Gallery() {
             }}
             className="relative z-10 flex flex-col gap-4 bg-ink p-8 sm:p-10"
           >
-            <span className="font-display text-sm text-blue">{String(i + 1).padStart(2, '0')}</span>
+            <span className="font-display text-sm text-green">{String(i + 1).padStart(2, '0')}</span>
             <h3 className="font-display text-xl text-canvas sm:text-2xl">{activity.title[lang]}</h3>
             <p className="text-sm leading-relaxed text-stone">{activity.description[lang]}</p>
           </div>

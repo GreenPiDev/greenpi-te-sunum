@@ -76,7 +76,7 @@ export function About() {
             key={stat.label}
             className="flex flex-col justify-center gap-4 border-t border-stone-dim pt-8 sm:h-full sm:w-screen sm:shrink-0 sm:border-t-0 sm:border-l sm:px-16 sm:pt-0 lg:px-28"
           >
-            <span className="font-display text-7xl text-blue sm:text-9xl">{stat.value}</span>
+            <span className="font-display text-7xl text-green sm:text-9xl">{stat.value}</span>
             <span className="text-sm uppercase tracking-widest text-stone">{stat.label}</span>
           </div>
         ))}

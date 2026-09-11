@@ -56,13 +56,6 @@ export function Exhibitions() {
 
   return (
     <section id="exhibitions" ref={sectionRef} data-nav-theme="dark" className="relative overflow-hidden bg-ink px-6 py-24 sm:px-10 sm:py-36">
-      <div
-        className="absolute inset-0"
-        style={{
-          backgroundImage:
-            'radial-gradient(60% 50% at 10% 0%, rgba(124,193,66,0.12) 0%, transparent 60%)',
-        }}
-      />
       <div className="relative mx-auto max-w-5xl">
         <p className="text-xs uppercase tracking-[0.3em] text-blue-soft">
           {t('exhibitions.kicker')}
@@ -82,7 +75,7 @@ export function Exhibitions() {
               data-reveal
               className="flex flex-col gap-2 border-t border-stone-dim py-6 sm:flex-row sm:items-baseline sm:gap-8 sm:py-7"
             >
-              <span className="font-display text-sm uppercase tracking-widest text-blue sm:w-28 sm:shrink-0">
+              <span className="font-display text-sm uppercase tracking-widest text-green sm:w-28 sm:shrink-0">
                 {item.year}
               </span>
               <h4 className="font-display text-lg text-canvas sm:text-xl">{item.title}</h4>

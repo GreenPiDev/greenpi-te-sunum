@@ -65,7 +65,7 @@ export function Process() {
               }}
               className="border-t border-stone-dim pt-6"
             >
-              <span className="font-display text-sm text-blue">0{i + 1}</span>
+              <span className="font-display text-sm text-green">0{i + 1}</span>
               <h3 className="font-display mt-3 text-2xl text-canvas">{step.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-stone">{step.body}</p>
             </div>

@@ -2,6 +2,7 @@ import { useLayoutEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import clsx from 'clsx'
 import { gsap } from '../../lib/gsapConfig'
+import { pinnableQuery } from '../../lib/hooks/useMediaQuery'
 import { partnerGroups } from '../../data/partners'
 
 const ecosystemLogos = [
@@ -17,43 +18,42 @@ export function Partners() {
   const { t, i18n } = useTranslation()
   const lang = i18n.language.startsWith('en') ? 'en' : 'tr'
   const sectionRef = useRef<HTMLElement>(null)
-  const cardsRef = useRef<(HTMLDivElement | null)[][]>(partnerGroups.map(() => []))
-  const dividerRefs = useRef<(HTMLDivElement | null)[]>([])
+  const pinRef = useRef<HTMLDivElement>(null)
+  const trackRef = useRef<HTMLDivElement>(null)
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      cardsRef.current.forEach((groupCards, gi) => {
-        const cards = groupCards.filter((el): el is HTMLDivElement => el !== null)
-        const divider = dividerRefs.current[gi]
-        gsap.set(divider, { opacity: 0 })
+      const mm = gsap.matchMedia()
 
-        cards.forEach((card, i) => {
-          gsap.fromTo(
-            card,
-            { opacity: 0, y: 24, scale: 0.96 },
-            {
-              opacity: 1,
-              y: 0,
-              scale: 1,
-              duration: 0.6,
-              ease: 'power2.out',
-              scrollTrigger: { trigger: card, start: 'top 90%' },
-              onComplete:
-                i === cards.length - 1
-                  ? () => gsap.to(divider, { opacity: 1, duration: 0.5, ease: 'power1.out' })
-                  : undefined,
-            },
-          )
+      mm.add(pinnableQuery, () => {
+        const track = trackRef.current
+        if (!track) return
+        const distance = track.scrollWidth - window.innerWidth
+
+        gsap.to(track, {
+          x: -distance,
+          ease: 'none',
+          scrollTrigger: {
+            id: 'partners-scroll',
+            trigger: pinRef.current,
+            start: 'top top',
+            end: () => `+=${distance}`,
+            scrub: 1,
+            pin: true,
+            invalidateOnRefresh: true,
+          },
         })
       })
+
+      return () => mm.revert()
     }, sectionRef)
 
     return () => ctx.revert()
   }, [])
 
   return (
-    <section id="partners" ref={sectionRef} data-nav-theme="light" className="relative bg-canvas px-6 py-24 text-ink sm:px-10 sm:py-36">
-      <div className="mx-auto max-w-5xl">
+    <section id="partners" ref={sectionRef} data-nav-theme="light" className="relative bg-canvas text-ink">
+      <div className="mx-auto max-w-5xl px-6 pt-24 sm:px-10 sm:pt-36">
         <p className="text-xs uppercase tracking-[0.3em] text-blue">{t('partners.kicker')}</p>
         <h2 className="font-display mt-4 max-w-3xl text-4xl leading-tight sm:text-6xl">
           {t('partners.title')}
@@ -61,53 +61,89 @@ export function Partners() {
         <p className="mt-6 max-w-2xl text-base leading-relaxed text-stone-dim sm:text-lg">
           {t('partners.body')}
         </p>
+      </div>
 
-        {partnerGroups.map((group, gi) => (
-          <div key={group.id} className="mt-16 sm:mt-20">
-            <h3 className="text-xs uppercase tracking-[0.3em] text-stone-dim">{group.label[lang]}</h3>
-            <div
-              className={clsx(
-                'relative grid grid-cols-1 gap-px overflow-hidden rounded-sm',
-                group.partners.length >= 2 && 'sm:grid-cols-2',
-                group.partners.length >= 3 && 'lg:grid-cols-3',
-              )}
-            >
-              <div
-                ref={(el) => {
-                  dividerRefs.current[gi] = el
-                }}
-                aria-hidden="true"
-                className="absolute inset-0 z-0 bg-ink/15"
-              />
-              {group.partners.map((partner, pi) => (
+      <div ref={pinRef} className="relative mt-16 overflow-hidden sm:mt-20 sm:h-screen">
+        <div
+          ref={trackRef}
+          className="flex flex-col gap-16 px-6 sm:h-screen sm:flex-row sm:items-center sm:gap-0 sm:px-0"
+        >
+          {partnerGroups.map((group) => {
+            const isDistributorship = group.id === 'distributorship'
+
+            if (isDistributorship) {
+              const partner = group.partners[0]
+              return (
                 <div
-                  key={partner.name}
-                  ref={(el) => {
-                    cardsRef.current[gi][pi] = el
-                  }}
-                  className="relative z-10 flex flex-col gap-3 overflow-hidden bg-canvas p-6 sm:p-7"
+                  key={group.id}
+                  className="relative flex h-full w-screen shrink-0 flex-col gap-10 overflow-hidden sm:flex-row sm:items-center sm:gap-0"
                 >
-                  {partner.logo ? (
+                  <div className="relative z-10 flex flex-col justify-center gap-4 px-6 sm:w-2/5 sm:px-16 lg:px-28">
+                    <h3 className="text-xs uppercase tracking-[0.3em] text-stone-dim">{group.label[lang]}</h3>
+                    <h4 className="font-display text-2xl font-bold sm:text-3xl">{partner.name}</h4>
+                    <p className="max-w-md text-base leading-relaxed text-stone-dim sm:text-lg">
+                      {partner.scope[lang]}
+                    </p>
+                  </div>
+                  <div className="relative flex h-72 w-full items-center justify-center px-10 sm:h-full sm:w-3/5 sm:px-16">
                     <img
-                      src={`/images/brands/${partner.logo}.png`}
+                      src="/images/brands/aite-fuse-logo.svg"
                       alt={partner.name}
-                      className="pointer-events-none absolute inset-y-0 right-0 h-full w-1/2 object-contain object-right-bottom opacity-20"
+                      className="h-full w-full object-contain opacity-20"
                       onError={(e) => {
                         e.currentTarget.style.display = 'none'
                       }}
                     />
-                  ) : null}
-                  <h4 className="relative font-display text-lg">{partner.name}</h4>
-                  <p className="relative max-w-[70%] text-sm leading-relaxed text-stone-dim">
-                    {partner.scope[lang]}
-                  </p>
+                  </div>
                 </div>
-              ))}
-            </div>
-          </div>
-        ))}
+              )
+            }
 
-        <div className="relative mt-16 flex flex-col items-center border-t border-ink/15 pt-10 text-center sm:mt-20">
+            return (
+              <div
+                key={group.id}
+                className="relative flex flex-col justify-center gap-6 sm:h-full sm:w-screen sm:shrink-0 sm:px-16 lg:px-28"
+              >
+                <h3 className="text-xs uppercase tracking-[0.3em] text-stone-dim">{group.label[lang]}</h3>
+                <div
+                  className={clsx(
+                    'relative grid grid-cols-1 gap-px overflow-hidden rounded-sm bg-ink/15',
+                    group.partners.length >= 2 && 'sm:grid-cols-2',
+                    group.partners.length >= 3 && 'lg:grid-cols-3',
+                  )}
+                >
+                  {group.partners.map((partner) => (
+                    <div
+                      key={partner.name}
+                      className="relative flex flex-col gap-3 overflow-hidden bg-canvas p-5 sm:p-6"
+                    >
+                      {partner.logo ? (
+                        <img
+                          src={`/images/brands/${partner.logo}.png`}
+                          alt={partner.name}
+                          className="pointer-events-none absolute inset-y-0 right-0 h-full w-1/2 object-contain object-right-bottom opacity-20"
+                          onError={(e) => {
+                            e.currentTarget.style.display = 'none'
+                          }}
+                        />
+                      ) : null}
+                      <h4 className="relative font-display text-base font-bold sm:text-lg">
+                        {partner.name}
+                      </h4>
+                      <p className="relative max-w-[70%] text-sm leading-relaxed text-stone-dim">
+                        {partner.scope[lang]}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )
+          })}
+        </div>
+      </div>
+
+      <div className="mx-auto max-w-5xl px-6 pb-24 sm:px-10 sm:pb-36">
+        <div className="relative flex flex-col items-center border-t border-ink/15 pt-10 text-center">
           <h3 className="text-xs uppercase tracking-[0.3em] text-stone-dim">
             {t('partners.ecosystemLabel')}
           </h3>
