@@ -50,7 +50,7 @@ export function About() {
         ref={trackRef}
         className="flex flex-col gap-16 px-6 sm:h-screen sm:flex-row sm:items-center sm:gap-0 sm:px-0"
       >
-        <div className="relative flex flex-col justify-center gap-6 sm:h-full sm:w-screen sm:shrink-0 sm:px-16 lg:px-28">
+        <div className="relative flex flex-col justify-center gap-6 overflow-hidden sm:h-full sm:w-screen sm:shrink-0 sm:px-16 lg:px-28">
           <img
             src="/images/founder-serhat-celik.jpg"
             alt={t('about.founderAlt')}
