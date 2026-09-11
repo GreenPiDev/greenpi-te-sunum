@@ -27,6 +27,8 @@ interface EventItem {
 export function Exhibitions() {
   const { t } = useTranslation()
   const sectionRef = useRef<HTMLElement>(null)
+  const projectsRef = useRef<(HTMLDivElement | null)[]>([])
+  const ongoingRef = useRef<(HTMLDivElement | null)[]>([])
 
   const projects = t('exhibitions.items', { returnObjects: true }) as ProjectItem[]
   const ongoing = t('exhibitions.ongoing', { returnObjects: true }) as OngoingItem[]
@@ -35,6 +37,29 @@ export function Exhibitions() {
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
+      const rowReveal = (rows: HTMLDivElement[]) => {
+        rows.forEach((row) => {
+          gsap.fromTo(
+            row,
+            { opacity: 0, y: 24 },
+            {
+              opacity: 1,
+              y: 0,
+              duration: 0.6,
+              ease: 'power3.out',
+              scrollTrigger: {
+                trigger: row,
+                start: 'top 90%',
+                toggleActions: 'play none none reverse',
+              },
+            },
+          )
+        })
+      }
+
+      rowReveal(projectsRef.current.filter((el): el is HTMLDivElement => el !== null))
+      rowReveal(ongoingRef.current.filter((el): el is HTMLDivElement => el !== null))
+
       const reveals = sectionRef.current?.querySelectorAll<HTMLElement>('[data-reveal]')
       if (!reveals?.length) return
 
@@ -69,10 +94,12 @@ export function Exhibitions() {
           {t('exhibitions.projectsLabel')}
         </h3>
         <div className="mt-6 flex flex-col">
-          {projects.map((item) => (
+          {projects.map((item, i) => (
             <div
               key={item.title}
-              data-reveal
+              ref={(el) => {
+                projectsRef.current[i] = el
+              }}
               className="flex flex-col gap-2 border-t border-stone-dim py-6 sm:flex-row sm:items-baseline sm:gap-8 sm:py-7"
             >
               <span className="font-display text-sm uppercase tracking-widest text-green sm:w-28 sm:shrink-0">
@@ -89,10 +116,12 @@ export function Exhibitions() {
           {t('exhibitions.ongoingLabel')}
         </h3>
         <div className="mt-6 flex flex-col">
-          {ongoing.map((item) => (
+          {ongoing.map((item, i) => (
             <div
               key={item.title}
-              data-reveal
+              ref={(el) => {
+                ongoingRef.current[i] = el
+              }}
               className="flex flex-col gap-2 border-t border-stone-dim py-6 sm:flex-row sm:items-baseline sm:gap-8 sm:py-7"
             >
               <h4 className="font-display text-lg text-canvas sm:text-xl">{item.title}</h4>
@@ -108,7 +137,7 @@ export function Exhibitions() {
         <p className="mt-4 max-w-2xl text-sm leading-relaxed text-stone">
           {t('exhibitions.agreementsIntro')}
         </p>
-        <div className="mt-8 grid grid-cols-1 gap-px overflow-hidden rounded-sm bg-stone-dim sm:grid-cols-2">
+        <div className="mt-8 grid grid-cols-1 gap-px overflow-hidden rounded-sm bg-ink sm:grid-cols-2">
           {agreements.map((item) => (
             <div key={item.company} data-reveal className="flex flex-col gap-2 bg-ink p-6 sm:p-8">
               <h4 className="font-display text-lg text-canvas">{item.company}</h4>

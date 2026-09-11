@@ -7,23 +7,48 @@ export function Opportunities() {
   const { t, i18n } = useTranslation()
   const lang = i18n.language.startsWith('en') ? 'en' : 'tr'
   const sectionRef = useRef<HTMLElement>(null)
+  const cardsRef = useRef<(HTMLDivElement | null)[]>([])
+  const roleRef = useRef<HTMLDivElement>(null)
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      const reveals = sectionRef.current?.querySelectorAll<HTMLElement>('[data-reveal]')
+      const cards = cardsRef.current.filter((el): el is HTMLDivElement => el !== null)
+
+      cards.forEach((card) => {
+        gsap.fromTo(
+          card,
+          { opacity: 0 },
+          {
+            opacity: 1,
+            duration: 0.5,
+            ease: 'power1.out',
+            scrollTrigger: {
+              trigger: card,
+              start: 'top 90%',
+              toggleActions: 'play none none reverse',
+            },
+          },
+        )
+      })
+
+      const reveals = roleRef.current?.querySelectorAll<HTMLElement>('[data-reveal]')
       if (!reveals?.length) return
 
-      gsap.from(reveals, {
-        opacity: 0,
-        y: 24,
-        duration: 0.7,
-        ease: 'power3.out',
-        stagger: 0.05,
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: 'top 70%',
+      gsap.fromTo(
+        reveals,
+        { opacity: 0, x: -32 },
+        {
+          opacity: 1,
+          x: 0,
+          duration: 0.7,
+          ease: 'power3.out',
+          scrollTrigger: {
+            trigger: roleRef.current,
+            start: 'top 85%',
+            toggleActions: 'play none none reverse',
+          },
         },
-      })
+      )
     }, sectionRef)
 
     return () => ctx.revert()
@@ -40,9 +65,15 @@ export function Opportunities() {
           {t('opportunities.body')}
         </p>
 
-        <div className="mt-14 grid grid-cols-1 gap-px overflow-hidden rounded-sm bg-ink/15 sm:mt-20 sm:grid-cols-2">
+        <div className="mt-14 grid grid-cols-1 gap-px overflow-hidden rounded-sm bg-canvas sm:mt-20 sm:grid-cols-2">
           {opportunities.map((item, i) => (
-            <div key={item.id} data-reveal className="flex flex-col gap-3 bg-canvas p-6 sm:p-8">
+            <div
+              key={item.id}
+              ref={(el) => {
+                cardsRef.current[i] = el
+              }}
+              className="flex flex-col gap-3 bg-canvas p-6 sm:p-8"
+            >
               <span className="font-display text-sm text-blue">{String(i + 1).padStart(2, '0')}</span>
               <h3 className="font-display text-lg sm:text-xl">{item.title[lang]}</h3>
               <p className="text-sm leading-relaxed text-stone-dim">{item.body[lang]}</p>
@@ -53,7 +84,7 @@ export function Opportunities() {
         <h3 className="mt-16 text-xs uppercase tracking-[0.3em] text-stone-dim sm:mt-24">
           {t('opportunities.roleLabel')}
         </h3>
-        <div className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-3">
+        <div ref={roleRef} className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-3">
           {roleTransformations.map((role) => (
             <div key={role.from[lang]} data-reveal className="border-t border-ink/15 pt-6">
               <p className="font-display text-lg">
