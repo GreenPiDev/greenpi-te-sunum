@@ -80,7 +80,7 @@ export function Exhibitions() {
   }, [])
 
   return (
-    <section id="exhibitions" ref={sectionRef} data-nav-theme="dark" className="relative overflow-hidden bg-ink px-6 py-24 sm:px-10 sm:py-36">
+    <section id="exhibitions" ref={sectionRef} data-nav-theme="dark" className="relative overflow-hidden bg-ink px-6 pb-12 pt-24 sm:px-10 sm:pb-16 sm:pt-36">
       <div className="relative mx-auto max-w-5xl">
         <p className="text-xs uppercase tracking-[0.3em] text-blue-soft">
           {t('exhibitions.kicker')}

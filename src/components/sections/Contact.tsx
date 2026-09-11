@@ -1,27 +1,40 @@
 import { useLayoutEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import { gsap } from '../../lib/gsapConfig'
-import { useIsTouchDevice } from '../../lib/hooks/useMediaQuery'
+import { useIsTouchDevice, pinnableQuery } from '../../lib/hooks/useMediaQuery'
 
 export function Contact() {
   const { t } = useTranslation()
   const sectionRef = useRef<HTMLElement>(null)
-  const titleRef = useRef<HTMLHeadingElement>(null)
+  const trackRef = useRef<HTMLDivElement>(null)
   const buttonRef = useRef<HTMLAnchorElement>(null)
   const isTouch = useIsTouchDevice()
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.from(titleRef.current, {
-        opacity: 0,
-        y: 40,
-        duration: 1,
-        ease: 'power3.out',
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: 'top 70%',
-        },
+      const mm = gsap.matchMedia()
+
+      mm.add(pinnableQuery, () => {
+        const track = trackRef.current
+        if (!track) return
+        const distance = track.scrollWidth - window.innerWidth
+
+        gsap.to(track, {
+          x: -distance,
+          ease: 'none',
+          scrollTrigger: {
+            id: 'contact-scroll',
+            trigger: sectionRef.current,
+            start: 'top top',
+            end: () => `+=${distance}`,
+            scrub: 1,
+            pin: true,
+            invalidateOnRefresh: true,
+          },
+        })
       })
+
+      return () => mm.revert()
     }, sectionRef)
 
     return () => ctx.revert()
@@ -60,31 +73,34 @@ export function Contact() {
       id="contact"
       ref={sectionRef}
       data-nav-theme="light"
-      className="relative flex min-h-[90vh] flex-col justify-between bg-canvas px-6 py-24 text-ink sm:px-10 sm:py-32"
+      className="relative overflow-hidden bg-ink sm:h-screen"
     >
-      <div>
-        <p className="text-xs uppercase tracking-[0.3em] text-blue">{t('contact.kicker')}</p>
-        <h2
-          ref={titleRef}
-          className="font-display mt-6 max-w-3xl text-4xl leading-tight sm:text-7xl"
-        >
-          {t('contact.title')}
-        </h2>
-        <p className="mt-6 max-w-md text-base text-stone-dim sm:text-lg">{t('contact.body')}</p>
+      <div ref={trackRef} className="flex flex-col sm:h-screen sm:flex-row">
+        <div className="hidden shrink-0 bg-ink sm:block sm:h-full sm:w-[25vw]" aria-hidden="true" />
 
-        <a
-          ref={buttonRef}
-          href="mailto:info@greenpi.com.tr"
-          className="mt-12 inline-flex h-32 w-32 items-center justify-center rounded-full border border-blue text-center text-sm uppercase tracking-widest text-ink transition-colors hover:bg-blue hover:text-canvas sm:h-40 sm:w-40"
-        >
-          {t('contact.cta')}
-        </a>
+        <div className="flex min-h-[90vh] w-full shrink-0 flex-col justify-between bg-canvas px-6 py-24 text-ink sm:h-full sm:w-screen sm:px-10 sm:py-32">
+          <div>
+            <p className="text-xs uppercase tracking-[0.3em] text-blue">{t('contact.kicker')}</p>
+            <h2 className="font-display mt-6 max-w-3xl text-4xl leading-tight sm:text-7xl">
+              {t('contact.title')}
+            </h2>
+            <p className="mt-6 max-w-md text-base text-stone-dim sm:text-lg">{t('contact.body')}</p>
+
+            <a
+              ref={buttonRef}
+              href="mailto:info@greenpi.com.tr"
+              className="mt-12 inline-flex h-32 w-32 items-center justify-center rounded-full border border-blue text-center text-sm uppercase tracking-widest text-ink transition-colors hover:bg-blue hover:text-canvas sm:h-40 sm:w-40"
+            >
+              {t('contact.cta')}
+            </a>
+          </div>
+
+          <footer className="mt-24 flex flex-col gap-2 border-t border-ink/15 pt-8 text-xs uppercase tracking-widest text-stone-dim sm:flex-row sm:items-center sm:justify-between">
+            <span>{t('contact.location')}</span>
+            <span>© {new Date().getFullYear()} {t('nav.brand')} — {t('footer.rights')}</span>
+          </footer>
+        </div>
       </div>
-
-      <footer className="mt-24 flex flex-col gap-2 border-t border-ink/15 pt-8 text-xs uppercase tracking-widest text-stone-dim sm:flex-row sm:items-center sm:justify-between">
-        <span>{t('contact.location')}</span>
-        <span>© {new Date().getFullYear()} {t('nav.brand')} — {t('footer.rights')}</span>
-      </footer>
     </section>
   )
 }

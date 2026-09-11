@@ -4,6 +4,7 @@ import clsx from 'clsx'
 import { getLenis } from '../../lib/lenis'
 import { ScrollTrigger } from '../../lib/gsapConfig'
 import { useSectionTheme } from '../../lib/hooks/useSectionTheme'
+import { useActiveSection } from '../../lib/hooks/useActiveSection'
 import { LanguageSwitch } from './LanguageSwitch'
 
 const links = [
@@ -16,11 +17,14 @@ const links = [
   { id: 'contact', key: 'nav.contact' },
 ] as const
 
+const linkIds = links.map((link) => link.id)
+
 export function Nav() {
   const { t } = useTranslation()
   const [open, setOpen] = useState(false)
   const theme = useSectionTheme()
   const isLight = theme === 'light'
+  const active = useActiveSection(linkIds)
 
   useEffect(() => {
     const lenis = getLenis()
@@ -70,7 +74,12 @@ export function Nav() {
               <button
                 key={link.id}
                 onClick={() => goTo(link.id)}
-                className="relative opacity-80 transition-opacity hover:opacity-100"
+                className={clsx(
+                  'relative origin-center transition-all duration-300',
+                  link.id === active
+                    ? 'scale-110 font-bold text-green opacity-100'
+                    : 'opacity-80 hover:opacity-100',
+                )}
               >
                 {t(link.key)}
               </button>
@@ -116,7 +125,8 @@ export function Nav() {
             onClick={() => goTo(link.id)}
             style={{ transitionDelay: open ? `${i * 60}ms` : '0ms' }}
             className={clsx(
-              'font-display text-3xl text-canvas transition-all duration-500',
+              'font-display text-3xl transition-all duration-500',
+              link.id === active ? 'scale-110 text-green' : 'text-canvas',
               open ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0',
             )}
           >
