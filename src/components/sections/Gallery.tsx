@@ -8,20 +8,28 @@ export function Gallery() {
   const lang = i18n.language.startsWith('en') ? 'en' : 'tr'
   const sectionRef = useRef<HTMLElement>(null)
   const cardsRef = useRef<(HTMLDivElement | null)[]>([])
+  const dividerRef = useRef<HTMLDivElement>(null)
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      cardsRef.current.forEach((card) => {
-        if (!card) return
+      const cards = cardsRef.current.filter((el): el is HTMLDivElement => el !== null)
+      gsap.set(dividerRef.current, { opacity: 0 })
+
+      cards.forEach((card, i) => {
         gsap.fromTo(
           card,
-          { opacity: 0, y: 32 },
+          { opacity: 0, y: 32, scale: 0.94 },
           {
             opacity: 1,
             y: 0,
+            scale: 1,
             duration: 0.7,
             ease: 'power2.out',
             scrollTrigger: { trigger: card, start: 'top 90%' },
+            onComplete:
+              i === cards.length - 1
+                ? () => gsap.to(dividerRef.current, { opacity: 1, duration: 0.5, ease: 'power1.out' })
+                : undefined,
           },
         )
       })
@@ -39,14 +47,15 @@ export function Gallery() {
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 gap-px overflow-hidden rounded-sm bg-stone-dim sm:grid-cols-2 lg:grid-cols-3">
+      <div className="relative grid grid-cols-1 gap-px overflow-hidden rounded-sm sm:grid-cols-2 lg:grid-cols-3">
+        <div ref={dividerRef} aria-hidden="true" className="absolute inset-0 z-0 bg-stone-dim" />
         {activities.map((activity, i) => (
           <div
             key={activity.id}
             ref={(el) => {
               cardsRef.current[i] = el
             }}
-            className="flex flex-col gap-4 bg-ink p-8 sm:p-10"
+            className="relative z-10 flex flex-col gap-4 bg-ink p-8 sm:p-10"
           >
             <span className="font-display text-sm text-blue">{String(i + 1).padStart(2, '0')}</span>
             <h3 className="font-display text-xl text-canvas sm:text-2xl">{activity.title[lang]}</h3>

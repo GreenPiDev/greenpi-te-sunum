@@ -96,6 +96,7 @@ export const partnerGroups: PartnerGroup[] = [
       },
       {
         name: 'ATEX / Ex-Proof',
+        logo: 'atex',
         scope: {
           tr: 'Özel Ex-proof gereksinimleri olan tesisler için patlayıcı ortam ekipmanları.',
           en: 'Equipment designed for hazardous and explosive atmospheres, serving facilities with Ex-proof requirements.',
