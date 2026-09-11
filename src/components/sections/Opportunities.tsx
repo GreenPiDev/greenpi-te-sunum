@@ -30,36 +30,36 @@ export function Opportunities() {
   }, [])
 
   return (
-    <section id="opportunities" ref={sectionRef} data-nav-theme="dark" className="relative bg-ink px-6 py-24 sm:px-10 sm:py-36">
+    <section id="opportunities" ref={sectionRef} data-nav-theme="light" className="relative bg-canvas px-6 py-24 text-ink sm:px-10 sm:py-36">
       <div className="mx-auto max-w-5xl">
-        <p className="text-xs uppercase tracking-[0.3em] text-blue-soft">{t('opportunities.kicker')}</p>
-        <h2 className="font-display mt-4 max-w-3xl text-4xl leading-tight text-canvas sm:text-6xl">
+        <p className="text-xs uppercase tracking-[0.3em] text-blue">{t('opportunities.kicker')}</p>
+        <h2 className="font-display mt-4 max-w-3xl text-4xl leading-tight sm:text-6xl">
           {t('opportunities.title')}
         </h2>
-        <p className="mt-6 max-w-2xl text-base leading-relaxed text-stone sm:text-lg">
+        <p className="mt-6 max-w-2xl text-base leading-relaxed text-stone-dim sm:text-lg">
           {t('opportunities.body')}
         </p>
 
-        <div className="mt-14 grid grid-cols-1 gap-px overflow-hidden rounded-sm bg-stone-dim sm:mt-20 sm:grid-cols-2">
+        <div className="mt-14 grid grid-cols-1 gap-px overflow-hidden rounded-sm bg-ink/15 sm:mt-20 sm:grid-cols-2">
           {opportunities.map((item, i) => (
-            <div key={item.id} data-reveal className="flex flex-col gap-3 bg-ink p-6 sm:p-8">
+            <div key={item.id} data-reveal className="flex flex-col gap-3 bg-canvas p-6 sm:p-8">
               <span className="font-display text-sm text-blue">{String(i + 1).padStart(2, '0')}</span>
-              <h3 className="font-display text-lg text-canvas sm:text-xl">{item.title[lang]}</h3>
-              <p className="text-sm leading-relaxed text-stone">{item.body[lang]}</p>
+              <h3 className="font-display text-lg sm:text-xl">{item.title[lang]}</h3>
+              <p className="text-sm leading-relaxed text-stone-dim">{item.body[lang]}</p>
             </div>
           ))}
         </div>
 
-        <h3 className="mt-16 text-xs uppercase tracking-[0.3em] text-stone sm:mt-24">
+        <h3 className="mt-16 text-xs uppercase tracking-[0.3em] text-stone-dim sm:mt-24">
           {t('opportunities.roleLabel')}
         </h3>
         <div className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-3">
           {roleTransformations.map((role) => (
-            <div key={role.from[lang]} data-reveal className="border-t border-stone-dim pt-6">
-              <p className="font-display text-lg text-stone">
+            <div key={role.from[lang]} data-reveal className="border-t border-ink/15 pt-6">
+              <p className="font-display text-lg">
                 {role.from[lang]} <span className="text-blue">→</span> {role.to[lang]}
               </p>
-              <p className="mt-3 text-sm leading-relaxed text-stone">{role.body[lang]}</p>
+              <p className="mt-3 text-sm leading-relaxed text-stone-dim">{role.body[lang]}</p>
             </div>
           ))}
         </div>
