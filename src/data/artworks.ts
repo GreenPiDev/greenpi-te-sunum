@@ -4,7 +4,7 @@ export interface Artwork {
   year: string
   medium: { tr: string; en: string }
   size: string
-  gradient: string
+  image: string
 }
 
 export const artworks: Artwork[] = [
@@ -14,7 +14,7 @@ export const artworks: Artwork[] = [
     year: '2024',
     medium: { tr: 'Tuval üzerine yağlıboya', en: 'Oil on canvas' },
     size: '140 × 180 cm',
-    gradient: 'radial-gradient(120% 120% at 20% 20%, #e8a26f 0%, #c1552c 45%, #3a1f14 100%)',
+    image: '/images/artwork-ilk-isik.jpg',
   },
   {
     id: 'sessiz-oda',
@@ -22,7 +22,7 @@ export const artworks: Artwork[] = [
     year: '2023',
     medium: { tr: 'Karışık teknik', en: 'Mixed media' },
     size: '100 × 120 cm',
-    gradient: 'radial-gradient(120% 120% at 80% 30%, #9a9188 0%, #4a453f 50%, #0b0a09 100%)',
+    image: '/images/artwork-sessiz-oda.jpg',
   },
   {
     id: 'bellek-katmanlari',
@@ -30,7 +30,7 @@ export const artworks: Artwork[] = [
     year: '2022',
     medium: { tr: 'Tuval üzerine yağlıboya', en: 'Oil on canvas' },
     size: '160 × 200 cm',
-    gradient: 'radial-gradient(120% 120% at 30% 70%, #c1552c 0%, #6b2f1a 45%, #0b0a09 100%)',
+    image: '/images/artwork-bellek-katmanlari.jpg',
   },
   {
     id: 'ic-mekan',
@@ -38,7 +38,7 @@ export const artworks: Artwork[] = [
     year: '2021',
     medium: { tr: 'Tuval üzerine yağlıboya', en: 'Oil on canvas' },
     size: '90 × 110 cm',
-    gradient: 'radial-gradient(120% 120% at 60% 20%, #e8a26f 0%, #9a9188 50%, #1a1613 100%)',
+    image: '/images/artwork-ic-mekan.jpg',
   },
   {
     id: 'aksam-uzeri',
@@ -46,6 +46,6 @@ export const artworks: Artwork[] = [
     year: '2020',
     medium: { tr: 'Karışık teknik', en: 'Mixed media' },
     size: '120 × 150 cm',
-    gradient: 'radial-gradient(120% 120% at 40% 40%, #4a453f 0%, #c1552c 55%, #0b0a09 100%)',
+    image: '/images/artwork-aksam-uzeri.jpg',
   },
 ]

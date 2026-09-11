@@ -34,7 +34,15 @@ export function Exhibitions() {
 
   return (
     <section id="exhibitions" ref={sectionRef} className="relative bg-ink px-6 py-24 sm:px-10 sm:py-36">
-      <div className="mx-auto max-w-4xl">
+      <div className="absolute inset-0">
+        <img
+          src="/images/exhibitions.jpg"
+          alt=""
+          className="h-full w-full object-cover opacity-20"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-ink via-ink/90 to-ink" />
+      </div>
+      <div className="relative mx-auto max-w-4xl">
         <p className="text-xs uppercase tracking-[0.3em] text-ember-soft">
           {t('exhibitions.kicker')}
         </p>

@@ -34,13 +34,24 @@ export function Process() {
   return (
     <section id="process" ref={sectionRef} className="relative bg-canvas px-6 py-24 text-ink sm:px-10 sm:py-36">
       <div className="mx-auto max-w-6xl">
-        <p className="text-xs uppercase tracking-[0.3em] text-ember">{t('process.kicker')}</p>
-        <h2 className="font-display mt-4 max-w-3xl text-4xl leading-tight sm:text-6xl">
-          {t('process.title')}
-        </h2>
-        <p className="mt-6 max-w-2xl text-base leading-relaxed text-stone-dim sm:text-lg">
-          {t('process.body')}
-        </p>
+        <div className="flex flex-col gap-10 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p className="text-xs uppercase tracking-[0.3em] text-ember">{t('process.kicker')}</p>
+            <h2 className="font-display mt-4 max-w-3xl text-4xl leading-tight sm:text-6xl">
+              {t('process.title')}
+            </h2>
+            <p className="mt-6 max-w-2xl text-base leading-relaxed text-stone-dim sm:text-lg">
+              {t('process.body')}
+            </p>
+          </div>
+          <div className="aspect-[3/4] w-full max-w-[220px] shrink-0 overflow-hidden rounded-sm sm:w-48">
+            <img
+              src="/images/process-paint.jpg"
+              alt=""
+              className="h-full w-full object-cover"
+            />
+          </div>
+        </div>
 
         <div className="mt-16 grid grid-cols-1 gap-10 sm:mt-24 sm:grid-cols-3 sm:gap-8">
           {steps.map((step, i) => (

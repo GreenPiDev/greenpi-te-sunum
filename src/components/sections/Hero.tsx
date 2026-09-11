@@ -51,14 +51,20 @@ export function Hero() {
       ref={sectionRef}
       className="relative flex h-[100svh] items-end overflow-hidden bg-ink"
     >
-      <div
-        ref={backdropRef}
-        className="absolute inset-0"
-        style={{
-          backgroundImage:
-            'radial-gradient(90% 90% at 70% 30%, #c1552c 0%, #4a1f10 45%, #0b0a09 100%)',
-        }}
-      />
+      <div ref={backdropRef} className="absolute inset-0">
+        <img
+          src="/images/hero.jpg"
+          alt=""
+          className="h-full w-full object-cover"
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage:
+              'radial-gradient(90% 90% at 70% 30%, rgba(193,85,44,0.35) 0%, rgba(74,31,16,0.55) 45%, rgba(11,10,9,0.85) 100%)',
+          }}
+        />
+      </div>
       <div className="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-ink/40" />
 
       <div

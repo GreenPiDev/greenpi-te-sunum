@@ -91,10 +91,14 @@ export function Gallery() {
             className="mx-auto flex w-full max-w-5xl flex-col items-center gap-6 sm:sticky sm:top-[10vh]"
             style={{ transformOrigin: 'center center' }}
           >
-            <div
-              className="aspect-[4/5] w-full max-w-xl rounded-sm sm:aspect-[16/10] sm:max-w-4xl"
-              style={{ backgroundImage: art.gradient }}
-            />
+            <div className="aspect-[4/5] w-full max-w-xl overflow-hidden rounded-sm sm:aspect-[16/10] sm:max-w-4xl">
+              <img
+                src={art.image}
+                alt={art.title[lang]}
+                loading="lazy"
+                className="h-full w-full object-cover"
+              />
+            </div>
             <div className="flex w-full max-w-xl items-baseline justify-between sm:max-w-4xl">
               <div>
                 <h3 className="font-display text-2xl text-canvas sm:text-3xl">
