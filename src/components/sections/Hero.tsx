@@ -66,12 +66,6 @@ export function Hero() {
               'radial-gradient(75% 75% at 78% 22%, rgba(43,168,224,0.35) 0%, rgba(124,193,66,0.18) 40%, rgba(11,30,45,0.9) 75%)',
           }}
         />
-        <img
-          src="/sirket-logosu-2.png"
-          alt=""
-          aria-hidden="true"
-          className="absolute -right-24 top-1/2 h-[70vh] w-[70vh] -translate-y-1/2 opacity-[0.08] sm:h-[85vh] sm:w-[85vh]"
-        />
       </div>
       <div className="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-ink/40" />
 
@@ -79,11 +73,6 @@ export function Hero() {
         ref={titleRef}
         className="relative z-10 w-full px-6 pb-16 sm:px-10 sm:pb-24"
       >
-        <img
-          src="/sirket-logosu.png"
-          alt="Green Pi"
-          className="mb-6 h-10 w-auto rounded-sm sm:h-12"
-        />
         <p className="mb-4 text-xs uppercase tracking-[0.3em] text-blue-soft sm:text-sm">
           {t('hero.kicker')}
         </p>
@@ -91,6 +80,11 @@ export function Hero() {
           {t('hero.title')}
         </h1>
         <p className="mt-6 max-w-md text-base text-stone sm:text-lg">{t('hero.subtitle')}</p>
+        <img
+          src="/sirket-logosu.png"
+          alt="Green Pi"
+          className="mt-8 h-16 w-auto rounded-sm sm:h-20"
+        />
       </div>
 
       <div className="absolute bottom-6 right-6 z-10 hidden items-center gap-2 text-xs uppercase tracking-widest text-stone sm:right-10 sm:flex">
