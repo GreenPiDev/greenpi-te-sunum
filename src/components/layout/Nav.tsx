@@ -2,12 +2,15 @@ import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import clsx from 'clsx'
 import { getLenis } from '../../lib/lenis'
+import { ScrollTrigger } from '../../lib/gsapConfig'
 import { LanguageSwitch } from './LanguageSwitch'
 
 const links = [
   { id: 'about', key: 'nav.about' },
   { id: 'gallery', key: 'nav.gallery' },
+  { id: 'partners', key: 'nav.partners' },
   { id: 'process', key: 'nav.process' },
+  { id: 'opportunities', key: 'nav.opportunities' },
   { id: 'exhibitions', key: 'nav.exhibitions' },
   { id: 'contact', key: 'nav.contact' },
 ] as const
@@ -24,10 +27,19 @@ export function Nav() {
 
   const goTo = (id: string) => {
     setOpen(false)
-    const el = document.getElementById(id)
-    if (!el) return
     const lenis = getLenis()
     lenis?.start()
+
+    if (id === 'about') {
+      const trigger = ScrollTrigger.getById('about-scroll')
+      if (trigger) {
+        lenis?.scrollTo(trigger.start, { duration: 1.4 })
+        return
+      }
+    }
+
+    const el = document.getElementById(id)
+    if (!el) return
     lenis?.scrollTo(el, { duration: 1.4 })
   }
 
@@ -39,7 +51,7 @@ export function Nav() {
             onClick={() => goTo('hero')}
             className="font-display text-lg tracking-wide text-canvas sm:text-xl"
           >
-            Elif Kaya
+            {t('nav.brand')}
           </button>
 
           <nav className="hidden items-center gap-8 text-sm uppercase tracking-widest text-canvas md:flex">

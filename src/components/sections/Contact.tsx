@@ -62,7 +62,7 @@ export function Contact() {
       className="relative flex min-h-[90vh] flex-col justify-between bg-ink px-6 py-24 sm:px-10 sm:py-32"
     >
       <div>
-        <p className="text-xs uppercase tracking-[0.3em] text-ember-soft">{t('contact.kicker')}</p>
+        <p className="text-xs uppercase tracking-[0.3em] text-blue-soft">{t('contact.kicker')}</p>
         <h2
           ref={titleRef}
           className="font-display mt-6 max-w-3xl text-4xl leading-tight text-canvas sm:text-7xl"
@@ -73,8 +73,8 @@ export function Contact() {
 
         <a
           ref={buttonRef}
-          href="mailto:studio@elifkaya.art"
-          className="mt-12 inline-flex h-32 w-32 items-center justify-center rounded-full border border-ember text-center text-sm uppercase tracking-widest text-canvas transition-colors hover:bg-ember sm:h-40 sm:w-40"
+          href="mailto:info@greenpi.com.tr"
+          className="mt-12 inline-flex h-32 w-32 items-center justify-center rounded-full border border-blue text-center text-sm uppercase tracking-widest text-canvas transition-colors hover:bg-blue sm:h-40 sm:w-40"
         >
           {t('contact.cta')}
         </a>
@@ -82,7 +82,7 @@ export function Contact() {
 
       <footer className="mt-24 flex flex-col gap-2 border-t border-stone-dim pt-8 text-xs uppercase tracking-widest text-stone sm:flex-row sm:items-center sm:justify-between">
         <span>{t('contact.location')}</span>
-        <span>© {new Date().getFullYear()} Elif Kaya — {t('footer.rights')}</span>
+        <span>© {new Date().getFullYear()} {t('nav.brand')} — {t('footer.rights')}</span>
       </footer>
     </section>
   )

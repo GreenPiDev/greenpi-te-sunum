@@ -1,60 +1,107 @@
 {
   "nav": {
-    "about": "Sanatçı",
-    "gallery": "Eserler",
-    "process": "Atölye",
-    "exhibitions": "Sergiler",
+    "brand": "Green Pi Enerji",
+    "about": "Hakkımızda",
+    "gallery": "Faaliyetler",
+    "partners": "Ortaklıklar",
+    "process": "Strateji",
+    "opportunities": "Fırsatlar",
+    "exhibitions": "Projeler",
     "contact": "İletişim"
   },
   "hero": {
-    "kicker": "Resim · Yağlıboya & Karışık Teknik",
-    "title": "Elif Kaya",
-    "subtitle": "Işığın bıraktığı iz üzerine çalışıyorum.",
+    "kicker": "Proje Deneyimi, Büyüme & TE Connectivity Stratejisi",
+    "title": "Green Pi Enerji",
+    "subtitle": "Sadece ürün satmıyoruz, çözüm üretiyoruz. Türkiye'de TE Connectivity ile uzun vadeli büyümeyi hedefleyen, mühendislik odaklı güç dağıtımı ve yenilenebilir enerji ortaklıkları.",
     "scroll": "Aşağı kaydır"
   },
   "about": {
-    "kicker": "Sanatçı",
-    "title": "Renk, hafızanın diliyle konuşur",
-    "body": "İstanbul'da doğdu, atölyesini Kuzguncuk'ta kurdu. Yirmi yılı aşkın süredir yağlıboya ve karışık teknik üzerine çalışan Elif Kaya'nın eserleri, gündelik anların bıraktığı duygusal izleri büyük tuvallere taşıyor.",
-    "stat1Value": "20+",
-    "stat1Label": "Yıllık pratik",
-    "stat2Value": "140",
-    "stat2Label": "Tamamlanan eser",
-    "stat3Value": "12",
-    "stat3Label": "Kişisel sergi"
+    "kicker": "Biz Kimiz",
+    "title": "Mühendislik uzmanlığı, ticari kapasite, uzun vadeli ilişkiler",
+    "body": "Serhat Çelik tarafından 2 Ağustos 2023'te kurulan Green Pi Enerji; Alçak Gerilim, Orta Gerilim, güç dağıtımı ve yenilenebilir enerji alanlarında faaliyet gösteriyor — tek bir ilkeyle: ürün satmak değil, çözüm üretmek. Temmuz 2026 itibarıyla Green Pi, yazılım ve bilgi teknolojilerine genişledi; 12 Aralık 2024'te ise Green Pi Tarım & Hayvancılık, Sarıkaya, Yozgat'ta faaliyete başladı. Daha geniş Green Pi grubu bugün enerji, mühendislik, teknoloji, yazılım ve tarım alanlarını kapsıyor.",
+    "stat1Value": "2023",
+    "stat1Label": "Ankara, Türkiye'de kuruldu",
+    "stat2Value": "5",
+    "stat2Label": "İş kolu: Enerji, Mühendislik, Teknoloji, Yazılım, Tarım",
+    "stat3Value": "13+",
+    "stat3Label": "Uluslararası marka ortaklığı"
   },
   "gallery": {
-    "kicker": "Seçilmiş Eserler",
-    "title": "Eserler",
-    "viewWork": "Esere bak"
+    "kicker": "Ne Yapıyoruz",
+    "title": "Faaliyet Alanlarımız"
+  },
+  "partners": {
+    "kicker": "Marka Portföyü",
+    "title": "Marka Portföyümüz & Stratejik Ortaklıklar",
+    "body": "Green Pi Enerji; distribütörlük, yetkili bayilik, ürün temsilciliği, mühendislik desteği ve proje bazlı ortaklıkları bir araya getirir — uluslararası markaları yerel pazar bilgisiyle birleştirerek her müşteri ve uygulama için en uygun çözümü sunar.",
+    "ecosystemLabel": "Daha Geniş Marka Ekosistemi",
+    "ecosystemBody": "Proje gereksinimlerine bağlı olarak Green Pi; ABB, LS Electric, Jean Müller, Schrack, Miltera, Iskra ve çeşitli özel üreticilerin çözümlerini de değerlendirip birleştirebilir — bu da her projede en uygun teknik ve ticari çözüme ulaşma esnekliği sağlar."
   },
   "process": {
-    "kicker": "Atölye",
-    "title": "Tuval, önce sessizlikle başlar",
-    "body": "Her eser, günlerce süren gözlem ve karakalem denemeleriyle şekillenir. Renk katmanları haftalar içinde birikir; son fırça darbesi, ilk fikirden aylar sonra atılır.",
-    "step1Title": "Gözlem",
-    "step1Body": "Işık, doku ve anın kaydı — karakalem defterinde.",
-    "step2Title": "Katman",
-    "step2Body": "Zemin renkleri, haftalar süren sabırla üst üste eklenir.",
-    "step3Title": "Çözüm",
-    "step3Body": "Kompozisyon netleşene kadar tuval yeniden ele alınır."
+    "kicker": "Yaklaşımımız",
+    "title": "Sadece ürün değil, çözüm",
+    "body": "Her projede amacımız yalnızca müşterinin hangi ürünü satın alacağını belirlemek değil; en uygun sistem mimarisini, koruma felsefesini, iletişim altyapısını ve gelecekteki genişleme ihtiyaçlarını da değerlendirmektir — Green Pi'yi bir ekipman tedarikçisi değil, uzun vadeli mühendislik ortağı haline getiren de budur.",
+    "roadmapLabel": "Büyüme Yol Haritası",
+    "roadmap": "500K € → 1M € → Sürdürülebilir Yıllık Büyüme",
+    "step1Title": "İlk Yıl Hedefi",
+    "step1Body": "İşbirliğinin ilk yılında TE Connectivity ürünleri için 500.000 €'nun üzerinde yıllık satın alma anlaşması kurmak.",
+    "step2Title": "OEM Entegrasyonu",
+    "step2Body": "TE Connectivity bileşenlerini BOM listelerine, standart pano tasarımlarına ve yıllık satın alma programlarına entegre ederek tekil siparişlerin ötesine geçmek.",
+    "step3Title": "Uzun Vadeli Ortaklık",
+    "step3Body": "Yerel stok, teknik destek, alt bayi ağı geliştirme ve ortak pazarlama girişimleriyle kalıcı ve büyüyen bir pazar kurmak.",
+    "targetOemsLabel": "Hedef OEM'ler & Üreticiler",
+    "targetOemsIntro": "İlk fazda Green Pi, TE Connectivity'yi büyük üreticilerin BOM listelerine, standart pano tasarımlarına ve yıllık satın alma programlarına entegre etmeyi hedefliyor:",
+    "targetOems": ["Astor", "Europower", "Elko", "Çağdaş Pano", "Hawk Power", "CW Enerji", "Voltberg", "Ekos"],
+    "visionLabel": "Vizyonumuz",
+    "visionBody": "Green Pi Enerji'nin uzun vadeli hedefi; enerji, mühendislik, teknoloji ve dijitalleşmeyi tek çatı altında birleştiren uluslararası bir çözüm şirketi olmaktır — mühendislik, ürün tedariki, sistem entegrasyonu ve proje geliştirme faaliyetlerini Avrupa, Orta Doğu, Kafkasya ve çevre pazarlara genişletmek."
+  },
+  "opportunities": {
+    "kicker": "Pazar Geliştirme",
+    "title": "Türkiye'de TE Connectivity İçin Pazar Geliştirme Fırsatları",
+    "body": "Green Pi'nin üreticiler, pano imalatçıları, mühendislik firmaları ve son kullanıcılarla doğrudan etkileşiminden yola çıkarak; önemli bir büyüme potansiyeli görüyoruz — ve TE Connectivity'nin küresel ürün gücünü daha güçlü bir pazar nüfuzuna çevirebilecek daha güçlü bir yerel yapı için birkaç alan tespit ediyoruz.",
+    "roleLabel": "Green Pi'nin TE Connectivity İçin Rolü"
   },
   "exhibitions": {
-    "kicker": "Sergiler",
-    "title": "Sergi ve Ödüller",
+    "kicker": "Referanslar",
+    "title": "Proje Deneyimi & Büyüme",
+    "projectsLabel": "Seçilmiş Proje Deneyimi",
     "items": [
-      { "year": "2024", "title": "Sessiz Işık", "place": "Mixer Gallery, İstanbul" },
-      { "year": "2022", "title": "İç Mekanlar", "place": "Galeri Zilberman, İstanbul" },
-      { "year": "2020", "title": "Bellek Katmanları", "place": "Art Basel Satellite, Basel" },
-      { "year": "2018", "title": "Genç Sanat Ödülü", "place": "İstanbul Bienali" }
+      { "year": "Anahtar Teslim", "title": "Merkez Ankara – İller Bankası OG Trafo Merkezi", "place": "Mühendislik, tedarik & devreye alma" },
+      { "year": "Anahtar Teslim", "title": "Merkez Ankara Otopark OG Trafo Merkezi", "place": "Tamamlandı & devreye alındı" },
+      { "year": "Tedarik", "title": "Emniyet Genel Müdürlüğü – Narkotik Dairesi, Ankara", "place": "OG ekipman tedariki" },
+      { "year": "Tedarik", "title": "Körfezray Metro Projesi", "place": "OG trafo merkezi ekipmanları" },
+      { "year": "Yenilenebilir", "title": "Aksu Madencilik – Sivas GES", "place": "Elektrik & yenilenebilir enerji kapsamı" },
+      { "year": "Yenilenebilir", "title": "Ford Başer – Ankara GES", "place": "Ürün & mühendislik çözümleri" },
+      { "year": "Yenilenebilir", "title": "Artaş Mermer GES", "place": "Yenilenebilir enerji referansı" }
+    ],
+    "ongoingLabel": "Devam Eden Projeler",
+    "ongoing": [
+      { "title": "SDT Uzay & Savunma Teknolojileri", "place": "Fabrika elektrik taahhüt işleri" },
+      { "title": "Körfezray Metro – OG Trafo Merkezleri", "place": "Devam eden ürün tedariki" }
+    ],
+    "agreementsLabel": "Yeni Ticari Anlaşmalar & Büyüme",
+    "agreementsIntro": "Tekil siparişlerden, büyük üretici ve pano imalatçılarıyla yıllık tedarik anlaşmalarına ve tekrarlayan satın alma modellerine geçiş.",
+    "agreements": [
+      { "company": "Astor A.Ş.", "amount": "≈ 2,5M USD / yıl", "scope": "AITE sigorta ürünleri, Schneider & Siemens güç kalitesi kayıt cihazları" },
+      { "company": "Europower Enerji", "amount": "Yıllık anlaşma", "scope": "Schneider güç kalitesi kayıt cihazları" },
+      { "company": "Aksan Pano", "amount": "≈ 75.000 € / yıl", "scope": "AITE sigorta tedariki — TEDAŞ onaylı pano imalatçısı" },
+      { "company": "Şahbaz Pano", "amount": "≈ 100.000 € / yıl", "scope": "Raycap sürge koruma, TE Connectivity röle ve klemensleri" },
+      { "company": "Renpro", "amount": "≈ 150.000 € / yıl", "scope": "Schrack röle ve klemens ürünleri" }
+    ],
+    "eventsLabel": "Marka Görünürlüğü & Etkinlikler",
+    "events": [
+      { "title": "TE Connectivity Days", "body": "İstanbul veya Ankara'da, mühendisleri, pano imalatçılarını, OEM'leri, EPC'leri ve sistem entegratörlerini teknik seminerler ve ürün demoları etrafında bir araya getirecek yıllık bir etkinlik önerisi." },
+      { "title": "EIF Antalya 2026", "body": "Green Pi Enerji, Kasım 2026'da Antalya'daki EIF Enerji Kongresi & Fuarı'na katılacak — yenilenebilir enerji yatırımcıları, EPC'ler ve sanayi üreticileriyle buluşma." },
+      { "title": "Green Pi Cup", "body": "Atlıspor Kulübü'nde her yıl düzenlenen binicilik sporu sponsorluğu — kurumsal görünürlüğü uzun vadeli ilişki geliştirmeyle birleştiriyor." },
+      { "title": "Ankara Golf Kulübü", "body": "2026'dan itibaren turnuva sponsorluğu — TE Connectivity ile ortak sponsorluğa genişletmeyi hedeflediğimiz bir alan." }
     ]
   },
   "contact": {
     "kicker": "İletişim",
-    "title": "Bir eser hakkında konuşalım",
-    "body": "Sipariş, sergi veya işbirliği talepleri için atölyeyle doğrudan iletişime geçin.",
+    "title": "TE Connectivity için pazarı birlikte kuralım",
+    "body": "Ortaklık görüşmeleri, teknik işbirliği veya Türkiye'deki TE Connectivity büyüme stratejisini konuşmak için bizimle doğrudan iletişime geçin.",
     "cta": "E-posta gönder",
-    "location": "Kuzguncuk, İstanbul"
+    "location": "Gümüş Cd. No:40, Konutkent, 06810 Yenimahalle/Ankara"
   },
   "footer": {
     "rights": "Tüm hakları saklıdır."

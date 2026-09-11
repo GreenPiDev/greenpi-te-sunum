@@ -27,6 +27,7 @@ export function About() {
           x: -distance,
           ease: 'none',
           scrollTrigger: {
+            id: 'about-scroll',
             trigger: sectionRef.current,
             start: 'top top',
             end: () => `+=${distance}`,
@@ -49,23 +50,14 @@ export function About() {
         ref={trackRef}
         className="flex flex-col gap-16 px-6 sm:h-screen sm:flex-row sm:items-center sm:gap-0 sm:px-0"
       >
-        <div className="flex flex-col gap-10 sm:h-full sm:w-screen sm:shrink-0 sm:flex-row sm:items-center sm:gap-16 sm:px-16 lg:px-28">
-          <div className="flex flex-col justify-center gap-6">
-            <p className="text-xs uppercase tracking-[0.3em] text-ember-soft">{t('about.kicker')}</p>
-            <h2 className="font-display max-w-2xl text-4xl leading-tight text-canvas sm:text-6xl lg:text-7xl">
-              {t('about.title')}
-            </h2>
-            <p className="max-w-xl text-base leading-relaxed text-stone sm:text-lg">
-              {t('about.body')}
-            </p>
-          </div>
-          <div className="aspect-[4/5] w-full max-w-xs shrink-0 overflow-hidden rounded-sm sm:max-w-sm">
-            <img
-              src="/images/about-hands.jpg"
-              alt=""
-              className="h-full w-full object-cover"
-            />
-          </div>
+        <div className="flex flex-col justify-center gap-6 sm:h-full sm:w-screen sm:shrink-0 sm:px-16 lg:px-28">
+          <p className="text-xs uppercase tracking-[0.3em] text-blue-soft">{t('about.kicker')}</p>
+          <h2 className="font-display max-w-3xl text-4xl leading-tight text-canvas sm:text-6xl lg:text-7xl">
+            {t('about.title')}
+          </h2>
+          <p className="max-w-2xl text-base leading-relaxed text-stone sm:text-lg">
+            {t('about.body')}
+          </p>
         </div>
 
         {stats.map((stat) => (
@@ -73,7 +65,7 @@ export function About() {
             key={stat.label}
             className="flex flex-col justify-center gap-4 border-t border-stone-dim pt-8 sm:h-full sm:w-screen sm:shrink-0 sm:border-t-0 sm:border-l sm:px-16 sm:pt-0 lg:px-28"
           >
-            <span className="font-display text-7xl text-ember sm:text-9xl">{stat.value}</span>
+            <span className="font-display text-7xl text-blue sm:text-9xl">{stat.value}</span>
             <span className="text-sm uppercase tracking-widest text-stone">{stat.label}</span>
           </div>
         ))}

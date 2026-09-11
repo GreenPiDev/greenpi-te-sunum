@@ -13,6 +13,8 @@ export function Process() {
     { title: t('process.step3Title'), body: t('process.step3Body') },
   ]
 
+  const targetOems = t('process.targetOems', { returnObjects: true }) as string[]
+
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       gsap.from(stepsRef.current, {
@@ -36,7 +38,7 @@ export function Process() {
       <div className="mx-auto max-w-6xl">
         <div className="flex flex-col gap-10 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <p className="text-xs uppercase tracking-[0.3em] text-ember">{t('process.kicker')}</p>
+            <p className="text-xs uppercase tracking-[0.3em] text-blue">{t('process.kicker')}</p>
             <h2 className="font-display mt-4 max-w-3xl text-4xl leading-tight sm:text-6xl">
               {t('process.title')}
             </h2>
@@ -44,12 +46,13 @@ export function Process() {
               {t('process.body')}
             </p>
           </div>
-          <div className="aspect-[3/4] w-full max-w-[220px] shrink-0 overflow-hidden rounded-sm sm:w-48">
-            <img
-              src="/images/process-paint.jpg"
-              alt=""
-              className="h-full w-full object-cover"
-            />
+          <div className="flex w-full shrink-0 flex-col gap-2 border-l-2 border-blue py-2 pl-6 sm:w-64">
+            <span className="text-xs uppercase tracking-[0.3em] text-stone-dim">
+              {t('process.roadmapLabel')}
+            </span>
+            <span className="font-display text-2xl leading-snug sm:text-3xl">
+              {t('process.roadmap')}
+            </span>
           </div>
         </div>
 
@@ -62,11 +65,39 @@ export function Process() {
               }}
               className="border-t border-ink/20 pt-6"
             >
-              <span className="font-display text-sm text-ember">0{i + 1}</span>
+              <span className="font-display text-sm text-blue">0{i + 1}</span>
               <h3 className="font-display mt-3 text-2xl">{step.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-stone-dim">{step.body}</p>
             </div>
           ))}
+        </div>
+
+        <div className="mt-16 border-t border-ink/20 pt-10 sm:mt-24">
+          <h3 className="text-xs uppercase tracking-[0.3em] text-stone-dim">
+            {t('process.targetOemsLabel')}
+          </h3>
+          <p className="mt-4 max-w-2xl text-sm leading-relaxed text-stone-dim">
+            {t('process.targetOemsIntro')}
+          </p>
+          <div className="mt-6 flex flex-wrap gap-3">
+            {targetOems.map((name) => (
+              <span
+                key={name}
+                className="rounded-full border border-ink/20 px-4 py-1.5 text-sm text-ink"
+              >
+                {name}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-16 border-t border-ink/20 pt-10 sm:mt-20">
+          <h3 className="text-xs uppercase tracking-[0.3em] text-stone-dim">
+            {t('process.visionLabel')}
+          </h3>
+          <p className="mt-4 max-w-3xl text-base leading-relaxed text-stone-dim sm:text-lg">
+            {t('process.visionBody')}
+          </p>
         </div>
       </div>
     </section>

@@ -1,0 +1,458 @@
+1 - Meet the Founder – Serhat Çelik
+
+Serhat Çelik is a businessman and entrepreneur active in the fields of energy, engineering, technology, and business development, and is the founder of Green Pi Energy.
+With the aim of bringing together his technical and commercial experience in the energy sector under his own vision, he founded Green Pi Energy on 2 August 2023.
+The core business philosophy that Serhat Çelik has established for Green Pi is based on the principle of “creating solutions rather than simply selling products.”
+Rather than merely supplying a transformer, switchgear, panel, or automation product, this approach focuses on evaluating the customer’s entire electrical infrastructure, developing the most suitable system architecture, selecting the right products, planning system integration, and ensuring continuous technical support after the sale.
+For this reason, the development of Green Pi is built around the combination of engineering expertise, commercial capability, and long-term customer relationships.
+From Energy to Technology
+Serhat Çelik’s entrepreneurial vision is not limited to the traditional energy sector.
+As of July 2026, Green Pi expanded its scope of activities into software and information technologies, with the development of tailored solutions for energy and industrial companies, including:
+CRM, ERP, B2B platforms, web-based systems, and industry-specific software solutions.
+In this direction, Green Pi Works was developed as a structure that brings together Serhat Çelik’s experience in the energy sector with modern software technologies.
+The objective is to provide customers not only with electrical systems, but also with digital solutions that manage the sales, operations, data, and business processes associated with these systems.
+In addition to the energy and software sectors, Serhat Çelik has also made investments in agriculture and livestock farming.
+On 12 December 2024, Green Pi Agriculture & Livestock commenced operations in Sarıkaya, Yozgat, focusing on cattle breeding, sheep and lamb farming, as well as agricultural production for animal feed.
+As a result, the Green Pi brand has gradually developed into a diversified business structure covering:
+Energy + Engineering + Technology + Software + Agriculture
+and continues to evolve as a multi-sector entrepreneurial group with a long-term growth vision.
+
+
+
+2- ABOUT GREEN PI ENERGY
+Green Pi Energy Consulting Electrical Industry and Trade Ltd. Co. was established on 2 August 2023 to operate in the fields of energy engineering, project development, product supply, and system integration.
+Since its establishment, the company has focused particularly on Low Voltage (LV), Medium Voltage (MV), power distribution systems, and renewable energy solutions. Green Pi Energy’s approach goes beyond product sales; the company aims to deliver end-to-end engineering solutions, covering every stage from needs assessment and product selection to project design, supply, integration, commissioning, and after-sales support.
+Our Fields of Activity
+Green Pi Energy provides electrical distribution and engineering solutions for industrial facilities, energy projects, infrastructure investments, commercial buildings, data centers, renewable energy plants, and special engineering applications.
+Our main areas of activity include:
+•	Medium Voltage distribution systems
+•	Low Voltage distribution systems
+•	Transformer systems
+•	MV switchgear and RMU systems
+•	LV main and sub-distribution panels
+•	Power factor correction and harmonic filtering systems
+•	Power analyzers and energy monitoring systems
+•	Protection relays and metering systems
+•	SCADA, RTU, automation, and communication solutions
+•	Earthing and lightning protection systems
+•	Solar energy systems
+•	Electric vehicle charging infrastructure
+•	Cables and cable connection accessories
+•	Power quality solutions
+•	Mobile substations
+•	Special engineering and turnkey energy projects
+Medium Voltage Solutions
+One of Green Pi Energy’s core areas of expertise is Medium Voltage systems.
+Depending on project requirements and voltage levels, the company provides engineering and supply solutions for:
+MV switchgear, RMU systems, circuit breaker and fused switchgear, metering panels, transformer protection panels, incoming and outgoing feeder panels, as well as protection and control systems.
+Our engineering approach is not limited to equipment selection. Short-circuit withstand, protection coordination, metering architecture, communication infrastructure, operational philosophy, and future system expansion are also evaluated as part of the overall design.
+Transformer Solutions
+Green Pi Energy provides engineering and supply services for a wide range of transformer applications, including:
+•	Hermetically sealed oil-immersed transformers
+•	Conservator-type oil transformers
+•	Dry-type transformers
+•	Transformers designed for special power ratings and voltage levels
+Transformer selection is carried out by considering not only the required power rating, but also load characteristics, environmental conditions, cooling requirements, losses, protection philosophy, short-circuit levels, and future capacity expansion.
+Low Voltage Systems
+Green Pi Energy develops LV distribution solutions tailored to the requirements of industrial facilities, commercial projects, and infrastructure applications.
+Our solutions include:
+Main Distribution Boards, Sub-Distribution Boards, MCC systems, Power Factor Correction Panels, Automation Panels, Automatic Transfer Systems, and custom-designed electrical panels.
+Key design priorities include energy continuity, selectivity, operational safety, ease of maintenance, system reliability, and future expandability.
+SCADA, RTU, and Energy Management
+Modern energy systems must not only operate reliably; they must also be measurable, monitorable, connected, and remotely manageable.
+Green Pi Energy provides digitalization and energy management solutions based on technologies such as:
+•	SCADA systems
+•	RTU systems
+•	PLC applications
+•	Power analyzers
+•	Smart meters
+•	Protection relays
+•	IEC 61850
+•	Modbus
+•	RS485
+•	Ethernet/IP-based communication systems
+The objective is to enable customers to monitor energy consumption and system status in real time, identify failures more quickly, improve operational efficiency, and make better decisions based on accurate system data.
+Renewable Energy
+Green Pi Energy is also active in renewable energy projects, which represent a key part of the global energy transition.
+In solar energy applications, the company provides product and engineering solutions in areas including:
+•	AC and DC distribution systems
+•	1500 VDC equipment
+•	DC protection products
+•	Surge protection systems
+•	MC4 connectors and connection equipment
+•	LV/MV grid connection systems
+•	Transformers
+•	MV switchgear
+•	Energy monitoring and metering systems
+Our objective is to support renewable energy projects with reliable electrical infrastructure and integrated power distribution solutions.
+Mobile Substation Solutions
+One of the key engineering areas currently being developed by Green Pi Energy is Mobile Substation Solutions.
+Within a mobile substation platform, Green Pi Energy can integrate:
+MV switchgear, transformers, LV distribution systems, power factor correction, SCADA systems, auxiliary power supplies, generators, DC systems, protection systems, and the complete mechanical infrastructure.
+These solutions are particularly suitable for temporary power requirements, emergency power supply, mining operations, large infrastructure projects, construction sites, utility applications, and facilities where continuity of power supply is critical.
+Our Engineering Approach
+The fundamental difference of Green Pi Energy is that we operate with a solution-oriented rather than purely product-oriented approach.
+For each project, our objective is not only to determine which product the customer should purchase, but also to evaluate:
+the most suitable system architecture, the correct product selection, protection philosophy, system monitoring requirements, communication infrastructure, operational reliability, and future expansion possibilities.
+For this reason, Green Pi positions itself not merely as an electrical equipment supplier, but as a technical solution provider and long-term engineering partner for its customers.
+Strong Brand and Product Ecosystem
+Green Pi Energy is capable of combining solutions from various international and local manufacturers according to the technical and commercial requirements of each project.
+Brands and product groups evaluated and used within our projects include solutions from:
+Schneider Electric, ABB, Siemens, LS Electric, EAE, Jean Müller, TE Connectivity, Schrack, Inotel, Miltera, Iskra, Astor, as well as various specialized manufacturers operating in different segments of the electrical and energy industry.
+This multi-brand structure provides Green Pi with the flexibility to develop the most technically suitable and commercially competitive solution, rather than being limited to a single manufacturer or product family.
+Software and Digitalization
+As of July 2026, Green Pi Energy expanded its corporate scope to include software and information technology solutions.
+Within this framework, the company has started developing solutions for the energy and industrial sectors, including:
+•	CRM systems
+•	ERP systems
+•	B2B platforms
+•	Web-based management systems
+•	Custom software development
+•	Software solutions specifically designed for panel builders and industrial companies
+•	Quotation, sales, and customer management systems
+Through this structure, Green Pi aims to combine its experience in the energy sector with software technologies and provide its customers not only with electrical infrastructure, but also with digital business infrastructure.
+Our Vision and Long-Term Goal
+Green Pi Energy’s long-term objective is to become an international solution company that brings together energy, engineering, technology, and digitalization under one roof.
+In addition to its operations in Türkiye, the company aims to expand its engineering, product supply, system integration, and project development activities across Europe, the Middle East, the Caucasus, and surrounding markets.
+For Green Pi, growth does not simply mean selling more products.
+Our core objective is to build an organization that:
+understands the customer’s technical challenges, combines the right products with the right engineering, responds quickly, provides strong after-sales support, and establishes long-term business partnerships.
+Green Pi Energy aims to become a trusted partner throughout the entire project lifecycle — from the initial concept and engineering stage to supply, installation, commissioning, operation, and future expansion.
+
+
+
+3 Elbette. Aşağıda önceki metnin tamamını TE yerine “TE Connectivity” kullanacak şekilde revize ettim, Artaş Mermer GES’in anahtar teslim tamamlandığı ifadesini çıkardım, ayrıca verdiğin TE Connectivity Days, EIF Antalya, Green Pi Cup ve Ankara Golf Club sponsorluk hedeflerini kurumsal sunum diline uygun biçimde ekledim. Temel proje ve strateji kurgusunu, daha önce oluşturduğumuz metindeki yapı üzerinden korudum.
+GREEN PI ENERGY
+PROJECT EXPERIENCE, GROWTH & TE CONNECTIVITY STRATEGY
+Since its establishment, Green Pi Energy has built its growth strategy not merely around product sales, but around engineering, project development, turnkey execution, product supply, and long-term relationships with manufacturers and customers.
+Projects delivered across different industries have enabled Green Pi to develop strong technical and commercial capabilities, particularly in Medium Voltage systems, substations, power distribution, industrial applications, and renewable energy projects.
+Our business philosophy goes beyond responding to existing market demand. We aim to identify new opportunities, connect manufacturers’ technologies with the right applications, and ultimately create sustainable and scalable markets.
+ 
+SELECTED PROJECT EXPERIENCE
+Green Pi Energy has participated in projects across public infrastructure, industrial facilities, transportation, renewable energy, and critical infrastructure sectors.
+Merkez Ankara – İller Bankası MV Substation
+Completed as a turnkey project, including engineering, product supply, installation coordination, and commissioning activities.
+Merkez Ankara Car Park MV Substation
+Successfully completed and commissioned by Green Pi Energy as a turnkey MV substation project.
+Turkish National Police – Narcotics Department Building, Ankara
+Green Pi Energy provided Medium Voltage equipment and product supply for the building’s electrical distribution infrastructure.
+Körfezray Metro Project
+Green Pi Energy is involved in the supply of equipment for the Medium Voltage substations of one of Türkiye’s significant transportation infrastructure projects.
+Aksu Mining – Sivas Solar Power Plant
+Green Pi Energy participated in the electrical and renewable energy scope of the solar power plant project.
+Ford Başer – Ankara Solar Power Plant
+Product and engineering solutions were provided within the electrical infrastructure of the solar energy project.
+Artaş Marble Solar Power Plant
+The project represents another important renewable energy reference within Green Pi Energy’s growing solar energy portfolio.
+Through these projects, Green Pi has demonstrated its ability to operate not only as an equipment supplier, but also as an organization capable of contributing to project management, system design, engineering coordination, procurement, and field execution.
+ 
+ONGOING PROJECTS
+Green Pi Energy continues to expand its active project portfolio across several industries.
+SDT Space & Defence Technologies – Factory Electrical Contracting
+Green Pi Energy is currently undertaking electrical contracting works for the factory facilities of SDT Space & Defence Technologies.
+This project represents an important step in Green Pi’s expansion into the defence and advanced technology industries, where reliability, engineering quality, technical documentation, and compliance with demanding standards are critical.
+Körfezray Metro – MV Substations
+Product supply activities for the Medium Voltage substations of the Körfezray Metro Project are continuing.
+Through these projects, Green Pi aims to strengthen its presence across:
+Energy + Industry + Defence + Transportation Infrastructure + Renewable Energy
+ 
+NEW COMMERCIAL AGREEMENTS & GROWTH
+One of the strongest indicators of Green Pi Energy’s recent growth is the transition from individual orders toward annual supply agreements and recurring purchasing models with major manufacturers and panel builders.
+Astor A.Ş.
+An annual supply agreement of approximately USD 2.5 million has been established for AITE fuse products.
+In addition, annual purchasing arrangements have been developed with Astor for:
+•	Schneider power quality recording equipment
+•	Siemens power quality recording equipment
+Europower Enerji
+An annual purchasing agreement has been established for Schneider power quality recording equipment.
+Aksan Pano
+Aksan Pano, a TEDAŞ-approved panel manufacturer, has entered into an annual AITE fuse supply agreement with Green Pi with an approximate annual value of:
+EUR 75,000
+Şahbaz Pano
+A commercial structure with an approximate annual volume of:
+EUR 100,000
+has been developed covering:
+•	Raycap surge protection products
+•	TE Connectivity relays
+•	TE Connectivity terminal blocks and connection products
+Renpro
+An annual commercial cooperation with an approximate value of:
+EUR 150,000
+has been established for Schrack relay and terminal block products.
+These agreements demonstrate Green Pi’s evolution from a transaction-based supplier into a company capable of building predictable, recurring and scalable annual business volumes.
+ 
+GREEN PI × TE CONNECTIVITY
+STRATEGIC GROWTH MODEL FOR TÜRKİYE
+Green Pi’s objective with TE Connectivity goes far beyond a traditional distributor or product-supply relationship.
+Our ambition is not simply to compete for TE Connectivity’s existing business in Türkiye.
+Our objective is to create new business for TE Connectivity and expand the market.
+Green Pi intends to focus particularly on TE Connectivity product families such as:
+Terminal Blocks + Relays + Measurement & Monitoring Products + Electrical Indicators and Analyzers
+including products such as voltmeters and related panel measurement components.
+ 
+TARGET OEMs & MANUFACTURERS
+During the first phase, Green Pi aims to develop TE Connectivity business with major manufacturers and industrial organizations including:
+Astor
+Europower
+Elko
+Çağdaş Pano
+Hawk Power
+CW Enerji
+Voltberg
+Ekos
+Our objective is not simply to generate individual purchase orders from these companies.
+The real target is to integrate TE Connectivity products into their:
+BOM Lists
+Standard Panel Designs
+Approved Component Lists
+Technical Specifications
+Production Standards
+Annual Purchasing Programs
+Once a TE Connectivity component becomes part of an OEM’s standard design, the commercial opportunity moves beyond a single order and becomes a repeatable and scalable business model.
+ 
+FIRST-YEAR TARGET
+Green Pi Energy aims to establish more than EUR 500,000 in annual purchasing agreements for TE Connectivity products during the first year of cooperation.
+However, we do not define success only by first-year turnover.
+Our growth roadmap is:
+EUR 500K → EUR 1M → Sustainable Annual Growth
+The long-term objective is to establish a permanent, growing and profitable market for TE Connectivity in Türkiye.
+We believe this level of growth cannot be achieved simply by selling existing products to existing customers.
+It requires active market development.
+Therefore, together with TE Connectivity, we aim to build a structure covering:
+Marketing
+Trade Fairs
+Technical Seminars
+OEM Development
+Sub-Distributor Network
+Project Development
+Product Launches
+Technical Support
+Local Stock
+Customer Development
+ 
+TE CONNECTIVITY DAYS
+Creating a Technical Community Around the Brand
+One of Green Pi Energy’s strategic initiatives is to establish an annual industry event under the concept:
+TE CONNECTIVITY DAYS
+The event is planned to take place every year in either Istanbul or Ankara, hosted at a professional conference hotel.
+The objective is to bring together:
+•	Electrical engineers
+•	Panel builders
+•	OEM manufacturers
+•	EPC companies
+•	Consultants
+•	Industrial end users
+•	System integrators
+•	Distributors and sub-distributors
+•	Engineering companies
+from across Türkiye.
+The program would include technical seminars, product demonstrations, application presentations, new product launches, industry discussions, and networking sessions.
+The purpose of TE Connectivity Days would not only be to promote products.
+The objective would be to create a technical ecosystem around TE Connectivity in Türkiye.
+Through this organization, customers would gain direct access to product knowledge, application expertise and TE Connectivity technologies, while TE Connectivity would gain stronger relationships with engineers and decision-makers throughout the market.
+ 
+TRADE FAIR STRATEGY
+EIF Antalya 2026
+As part of its market development and brand visibility strategy, Green Pi Energy will participate in the EIF Energy Congress and Expo in Antalya in November 2026.
+Our participation will provide an opportunity to meet:
+•	Renewable energy investors
+•	EPC contractors
+•	Panel manufacturers
+•	Energy companies
+•	Engineering companies
+•	Industrial manufacturers
+•	Project developers
+and to further expand Green Pi’s commercial and technical network.
+Going forward, we aim to evaluate major sector exhibitions together with TE Connectivity and create opportunities for joint brand visibility, product promotion and customer engagement.
+ 
+BRAND VISIBILITY BEYOND THE INDUSTRY
+Green Pi Energy believes that a strong brand should be visible not only within traditional industrial channels but also within high-quality professional and social environments.
+Since the establishment of Green Pi Energy, the company has supported equestrian sports every year through sponsored competitions organized at Atlıspor Club under the name:
+GREEN PI CUP
+These events have allowed Green Pi to combine corporate visibility with long-term brand building and relationship development.
+In 2026, Green Pi Energy also became a sponsor of a tournament at Ankara Golf Club, which will continue through the end of the year.
+Our future objective is to develop these activities further and explore opportunities for:
+Green Pi Energy × TE Connectivity
+joint sponsorship and brand participation.
+We intend to work toward including the TE Connectivity brand as a sponsorship partner in selected equestrian, golf and premium corporate events each year.
+This will provide additional visibility for TE Connectivity beyond conventional exhibitions and technical events, while supporting stronger relationships with business leaders, engineers, investors and corporate decision-makers.
+ 
+MARKET DEVELOPMENT OPPORTUNITIES FOR TE CONNECTIVITY IN TÜRKİYE
+Based on Green Pi’s direct interaction with manufacturers, panel builders, engineering companies and end users, we believe TE Connectivity has significant growth potential in the Turkish market.
+At the same time, we see several areas where a stronger local structure could convert TE Connectivity’s global product strength into greater market penetration.
+1. Increasing Product Awareness
+TE Connectivity has a globally recognized technology portfolio.
+However, we believe some TE Connectivity product families still have the potential to achieve significantly greater awareness among:
+OEMs, panel builders, consultants, EPC companies, engineers and industrial end users in Türkiye.
+Green Pi intends to promote TE Connectivity products not simply through catalogues, but through applications, engineering solutions and real customer use cases.
+ 
+2. TECHNICAL SALES & APPLICATION SUPPORT
+Industrial customers often require more than a product code or quotation.
+Their real question is:
+“Which product should I use for this application?”
+This is one of the areas where Green Pi can create substantial value for TE Connectivity.
+Our objective is to establish a technical sales structure that:
+understands the customer's application first and then develops the correct TE Connectivity solution.
+Rather than selling components individually, Green Pi aims to demonstrate where, why and how TE Connectivity products should be used.
+ 
+3. STRONGER ACCESS TO OEMs & PANEL BUILDERS
+A significant proportion of sustainable industrial sales in Türkiye is generated through:
+Panel builders
+Transformer manufacturers
+OEMs
+EPC contractors
+Machine manufacturers
+Renewable energy equipment manufacturers
+Our strategy is therefore to move beyond individual project sales and establish TE Connectivity products as standard components within manufacturers’ designs.
+Entering the standard design of an OEM can generate significantly more value than a single order because the same component may subsequently be used across hundreds or thousands of panels and projects.
+ 
+4. LOCAL STOCK & FAST DELIVERY
+Product availability and delivery time are major purchasing criteria in the Turkish industrial market.
+We believe that a model based on:
+Local Stock + Fast Quotation + Fast Technical Response + Fast Delivery
+would significantly improve TE Connectivity’s competitiveness in Türkiye.
+Green Pi aims to establish a local stock structure for carefully selected fast-moving and strategically important TE Connectivity products.
+The objective is to ensure that customers can obtain the products they need without long international lead times.
+ 
+5. AFTER-SALES TECHNICAL SUPPORT
+From Green Pi’s perspective, the commercial relationship does not end when the product is delivered.
+We aim to become a local technical point of contact for TE Connectivity customers in Türkiye, supporting them with:
+•	Product selection
+•	Application engineering
+•	Installation questions
+•	Commissioning
+•	Alternative product selection
+•	Troubleshooting
+•	Field-related technical requirements
+This structure can strengthen both customer satisfaction and long-term loyalty to TE Connectivity.
+ 
+6. INTRODUCING NEW TE CONNECTIVITY PRODUCTS TO TÜRKİYE
+TE Connectivity has an extensive global product portfolio.
+We believe there are products and technologies within this portfolio that currently have limited market penetration or awareness in Türkiye.
+Green Pi aims to systematically analyze the global TE Connectivity portfolio and identify:
+Which products have potential in Türkiye?
+Which industries should use them?
+Who are the target customers?
+Which competing products can they replace?
+How can a new market be created around them?
+Our role should therefore not be limited to satisfying existing demand.
+We want to create the demand.
+ 
+7. MARKETING & BRAND VISIBILITY
+We believe TE Connectivity’s technological strength should be supported by stronger and more continuous market visibility.
+Together with TE Connectivity, Green Pi aims to support this through:
+•	TE Connectivity Days
+•	Industry exhibitions
+•	Technical seminars
+•	Customer workshops
+•	Engineering presentations
+•	Digital marketing
+•	Social media
+•	Technical catalogues
+•	Product samples
+•	Application demonstrations
+•	OEM visits
+•	Joint sponsorship activities
+The objective is to make TE Connectivity a brand that engineers and manufacturers encounter continuously, not occasionally.
+ 
+8. SUB-DISTRIBUTOR & SALES CHANNEL DEVELOPMENT
+Considering Türkiye’s geographic size and diversified industrial structure, we believe long-term growth should not depend entirely on a single centralized sales channel.
+Green Pi aims to establish a controlled and technically competent sub-distributor network in selected regions and industries.
+Within this model, Green Pi can act as the central solution partner responsible for:
+Stock
+Technical Support
+Pricing
+Marketing
+Training
+Project Management
+Sales Coordination
+while regional partners increase market coverage.
+ 
+THE ROLE OF GREEN PI FOR TE CONNECTIVITY
+Green Pi’s value proposition to TE Connectivity can be summarized in three transformations:
+From Distributor to Market Developer
+Not simply distributing TE Connectivity products, but creating new customers, applications and markets for the brand.
+From Product Supplier to Solution Partner
+Not simply providing a product code, but solving customer challenges through the right TE Connectivity technology and engineering approach.
+From Individual Sales to Sustainable Growth
+Moving from individual purchase orders toward:
+OEM Agreements + Annual Purchasing Programs + Standardized Products + Recurring Revenue + Growing Market Share
+ 
+OUR GOAL WITH TE CONNECTIVITY
+Green Pi Energy’s long-term objective is to become a strategic partner contributing to TE Connectivity’s growth in Türkiye.
+We aim to help make TE Connectivity:
+More Visible
+More Accessible
+More Technically Supported
+More Integrated into OEM Designs
+More Active in New Applications
+Closer to Customers
+Our objective is not simply to sell TE Connectivity products.
+Our Goal Is to Build the Market for TE Connectivity.
+Green Pi aims to combine:
+**Market Development
+•	Engineering
+•	Sales
+•	Local Stock
+•	Technical Support
+•	Marketing
+•	OEM Development
+•	Events & Training
+•	Brand Building**
+under one integrated structure.
+Our ambition is to build a sustainable, reliable and long-term TE Connectivity business in Türkiye.
+
+
+4
+
+Tabii. Sunumda kurumsal ve profesyonel görünecek şekilde şöyle kullanabilirsin:
+OUR BRAND PORTFOLIO & STRATEGIC PARTNERSHIPS
+Green Pi Energy has developed a strong portfolio of international brands and strategic partnerships to provide reliable, competitive, and technically suitable solutions for the energy and electrical industries.
+Our business model combines distribution, authorized dealership, product representation, engineering support, and project-based partnerships.
+DISTRIBUTORSHIP
+AITE FUSE – China
+Green Pi Energy acts as a distributor of AITE Fuse products, providing fuse and protection solutions for industrial, power distribution, panel manufacturing, and OEM applications.
+ 
+AUTHORIZED DEALERSHIP & PRODUCT REPRESENTATION
+Green Pi Energy represents and supplies products from leading international manufacturers across various electrical and energy applications.
+TE Connectivity
+Terminal blocks, relays, connection technologies, measurement products, and electrical components for industrial and power distribution applications.
+Schneider Electric
+Specialized solutions focusing on Power Quality Recorders and Power Quality Monitoring Systems.
+Siemens
+Specialized solutions focusing on Power Quality Recorders and Power Quality Monitoring Systems.
+REPL
+Medium Voltage cable terminations and cable accessories for power distribution and MV infrastructure applications.
+Inotel
+Electrical monitoring, protection, control, and automation solutions.
+Raycap
+Surge protection and electrical protection solutions for industrial and energy applications.
+Serten S.R.L.
+Specialized electrical products and solutions for industrial applications.
+Gromtor
+Electrical protection and related industrial solutions.
+ATEX / Ex-Proof Solutions
+Electrical equipment and components designed for hazardous and explosive atmospheres, serving industrial facilities with specific Ex-proof requirements.
+ 
+PROJECT PARTNERSHIPS
+In addition to our distribution and dealership activities, Green Pi Energy works with leading manufacturers through project-based partnerships.
+EAE
+Project cooperation for electrical distribution systems, busbar systems, and infrastructure applications.
+Astor
+Project cooperation in transformers, power distribution equipment, and energy infrastructure solutions.
+Europower
+Project cooperation in Medium Voltage systems, power distribution equipment, and integrated energy solutions.
+ 
+OUR BUSINESS MODEL
+Green Pi Energy does not position itself merely as a product reseller.
+We bring together:
+**International Brands
+•	Local Market Knowledge
+•	Engineering
+•	Technical Support
+•	Project Development
+•	Product Supply**
+to deliver the most appropriate solution for each customer and application.
+Our goal is to build long-term, sustainable relationships between manufacturers and customers while developing new markets and new applications for the brands we represent.
+From Product Supply to Long-Term Partnership.
+

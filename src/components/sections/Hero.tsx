@@ -52,17 +52,18 @@ export function Hero() {
       className="relative flex h-[100svh] items-end overflow-hidden bg-ink"
     >
       <div ref={backdropRef} className="absolute inset-0">
-        <img
-          src="/images/hero.jpg"
-          alt=""
-          className="h-full w-full object-cover"
-        />
         <div
           className="absolute inset-0"
           style={{
             backgroundImage:
-              'radial-gradient(90% 90% at 70% 30%, rgba(193,85,44,0.35) 0%, rgba(74,31,16,0.55) 45%, rgba(11,10,9,0.85) 100%)',
+              'radial-gradient(75% 75% at 78% 22%, rgba(43,168,224,0.35) 0%, rgba(124,193,66,0.18) 40%, rgba(11,30,45,0.9) 75%)',
           }}
+        />
+        <img
+          src="/sirket-logosu-2.png"
+          alt=""
+          aria-hidden="true"
+          className="absolute -right-24 top-1/2 h-[70vh] w-[70vh] -translate-y-1/2 opacity-[0.08] sm:h-[85vh] sm:w-[85vh]"
         />
       </div>
       <div className="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-ink/40" />
@@ -71,7 +72,12 @@ export function Hero() {
         ref={titleRef}
         className="relative z-10 w-full px-6 pb-16 sm:px-10 sm:pb-24"
       >
-        <p className="mb-4 text-xs uppercase tracking-[0.3em] text-ember-soft sm:text-sm">
+        <img
+          src="/sirket-logosu.png"
+          alt="Green Pi"
+          className="mb-6 h-10 w-auto rounded-sm sm:h-12"
+        />
+        <p className="mb-4 text-xs uppercase tracking-[0.3em] text-blue-soft sm:text-sm">
           {t('hero.kicker')}
         </p>
         <h1 className="font-display text-[15vw] leading-[0.9] text-canvas sm:text-[12vw] lg:text-[9rem]">

@@ -1,60 +1,107 @@
 {
   "nav": {
-    "about": "Artist",
-    "gallery": "Works",
-    "process": "Studio",
-    "exhibitions": "Exhibitions",
+    "brand": "Green Pi Energy",
+    "about": "About",
+    "gallery": "Activities",
+    "partners": "Partners",
+    "process": "Strategy",
+    "opportunities": "Opportunities",
+    "exhibitions": "Projects",
     "contact": "Contact"
   },
   "hero": {
-    "kicker": "Painting · Oil & Mixed Media",
-    "title": "Elif Kaya",
-    "subtitle": "I work on the trace that light leaves behind.",
+    "kicker": "Project Experience, Growth & TE Connectivity Strategy",
+    "title": "Green Pi Energy",
+    "subtitle": "Creating solutions — not just selling products. Engineering-led power distribution and renewable energy partnerships, built for long-term growth with TE Connectivity in Türkiye.",
     "scroll": "Scroll down"
   },
   "about": {
-    "kicker": "Artist",
-    "title": "Color speaks the language of memory",
-    "body": "Born in Istanbul, she built her studio in Kuzguncuk. Working in oil and mixed media for over two decades, Elif Kaya's work carries the emotional residue of everyday moments onto large-scale canvases.",
-    "stat1Value": "20+",
-    "stat1Label": "Years of practice",
-    "stat2Value": "140",
-    "stat2Label": "Works completed",
-    "stat3Value": "12",
-    "stat3Label": "Solo exhibitions"
+    "kicker": "Who We Are",
+    "title": "Engineering expertise, commercial capability, long-term relationships",
+    "body": "Founded by Serhat Çelik on 2 August 2023, Green Pi Energy operates in Low Voltage, Medium Voltage, power distribution, and renewable energy — guided by a single principle: creating solutions rather than simply selling products. As of July 2026, Green Pi expanded into software and information technology, and on 12 December 2024, Green Pi Agriculture & Livestock commenced operations in Sarıkaya, Yozgat. The wider Green Pi group now spans energy, engineering, technology, software, and agriculture.",
+    "stat1Value": "2023",
+    "stat1Label": "Founded in Ankara, Türkiye",
+    "stat2Value": "5",
+    "stat2Label": "Business pillars: Energy, Engineering, Technology, Software, Agriculture",
+    "stat3Value": "13+",
+    "stat3Label": "International brand partnerships"
   },
   "gallery": {
-    "kicker": "Selected Works",
-    "title": "Works",
-    "viewWork": "View work"
+    "kicker": "What We Do",
+    "title": "Fields of Activity"
+  },
+  "partners": {
+    "kicker": "Brand Portfolio",
+    "title": "Our Brand Portfolio & Strategic Partnerships",
+    "body": "Green Pi Energy combines distribution, authorized dealership, product representation, engineering support, and project-based partnerships — bringing together international brands and local market knowledge to deliver the most appropriate solution for each customer and application.",
+    "ecosystemLabel": "Wider Brand Ecosystem",
+    "ecosystemBody": "Depending on project requirements, Green Pi also evaluates and combines solutions from ABB, LS Electric, Jean Müller, Schrack, Miltera, Iskra, and various other specialized manufacturers — giving each project the flexibility to reach the most technically suitable and commercially competitive solution."
   },
   "process": {
-    "kicker": "Studio",
-    "title": "Every canvas begins with silence",
-    "body": "Each piece takes shape through days of observation and charcoal studies. Layers of color accumulate over weeks; the final brushstroke lands months after the first idea.",
-    "step1Title": "Observation",
-    "step1Body": "Light, texture, and the moment — recorded in the sketchbook.",
-    "step2Title": "Layering",
-    "step2Body": "Ground colors are built up over weeks of patient work.",
-    "step3Title": "Resolution",
-    "step3Body": "The canvas is reworked until the composition settles."
+    "kicker": "Our Approach",
+    "title": "Solutions, not just products",
+    "body": "For every project, our objective is not only to determine which product the customer should purchase, but also to evaluate the most suitable system architecture, protection philosophy, communication infrastructure, and future expansion — positioning Green Pi as a long-term engineering partner, not merely an equipment supplier.",
+    "roadmapLabel": "Growth Roadmap",
+    "roadmap": "€500K → €1M → Sustainable Annual Growth",
+    "step1Title": "First-Year Target",
+    "step1Body": "Establish more than €500,000 in annual purchasing agreements for TE Connectivity products during the first year of cooperation.",
+    "step2Title": "OEM Integration",
+    "step2Body": "Move beyond individual orders by integrating TE Connectivity components into BOM lists, standard panel designs, and annual purchasing programs.",
+    "step3Title": "Long-Term Partnership",
+    "step3Body": "Build a permanent, growing market through local stock, technical support, sub-distributor development, and joint marketing initiatives.",
+    "targetOemsLabel": "Target OEMs & Manufacturers",
+    "targetOemsIntro": "In the first phase, Green Pi aims to integrate TE Connectivity into the BOM lists, standard panel designs, and annual purchasing programs of major manufacturers, including:",
+    "targetOems": ["Astor", "Europower", "Elko", "Çağdaş Pano", "Hawk Power", "CW Enerji", "Voltberg", "Ekos"],
+    "visionLabel": "Our Vision",
+    "visionBody": "Green Pi Energy's long-term objective is to become an international solution company that brings together energy, engineering, technology, and digitalization under one roof — expanding engineering, product supply, system integration, and project development activities across Europe, the Middle East, the Caucasus, and surrounding markets."
+  },
+  "opportunities": {
+    "kicker": "Market Development",
+    "title": "Market Development Opportunities for TE Connectivity in Türkiye",
+    "body": "Based on Green Pi's direct interaction with manufacturers, panel builders, engineering companies and end users, we see significant growth potential — and several areas where a stronger local structure could convert TE Connectivity's global product strength into greater market penetration.",
+    "roleLabel": "The Role of Green Pi for TE Connectivity"
   },
   "exhibitions": {
-    "kicker": "Exhibitions",
-    "title": "Exhibitions & Awards",
+    "kicker": "Track Record",
+    "title": "Project Experience & Growth",
+    "projectsLabel": "Selected Project Experience",
     "items": [
-      { "year": "2024", "title": "Silent Light", "place": "Mixer Gallery, Istanbul" },
-      { "year": "2022", "title": "Interior Spaces", "place": "Zilberman Gallery, Istanbul" },
-      { "year": "2020", "title": "Layers of Memory", "place": "Art Basel Satellite, Basel" },
-      { "year": "2018", "title": "Young Artist Award", "place": "Istanbul Biennial" }
+      { "year": "Turnkey", "title": "Merkez Ankara – İller Bankası MV Substation", "place": "Engineering, supply & commissioning" },
+      { "year": "Turnkey", "title": "Merkez Ankara Car Park MV Substation", "place": "Completed & commissioned" },
+      { "year": "Supply", "title": "Turkish National Police – Narcotics Dept., Ankara", "place": "MV equipment supply" },
+      { "year": "Supply", "title": "Körfezray Metro Project", "place": "MV substation equipment" },
+      { "year": "Renewable", "title": "Aksu Mining – Sivas Solar Power Plant", "place": "Electrical & renewable scope" },
+      { "year": "Renewable", "title": "Ford Başer – Ankara Solar Power Plant", "place": "Product & engineering solutions" },
+      { "year": "Renewable", "title": "Artaş Marble Solar Power Plant", "place": "Renewable energy reference" }
+    ],
+    "ongoingLabel": "Ongoing Projects",
+    "ongoing": [
+      { "title": "SDT Space & Defence Technologies", "place": "Factory electrical contracting works" },
+      { "title": "Körfezray Metro – MV Substations", "place": "Ongoing product supply" }
+    ],
+    "agreementsLabel": "New Commercial Agreements & Growth",
+    "agreementsIntro": "The transition from individual orders toward annual supply agreements and recurring purchasing models with major manufacturers and panel builders.",
+    "agreements": [
+      { "company": "Astor A.Ş.", "amount": "≈ USD 2.5M / year", "scope": "AITE fuse products, plus Schneider & Siemens power quality recorders" },
+      { "company": "Europower Enerji", "amount": "Annual agreement", "scope": "Schneider power quality recording equipment" },
+      { "company": "Aksan Pano", "amount": "≈ EUR 75,000 / year", "scope": "AITE fuse supply — TEDAŞ-approved panel manufacturer" },
+      { "company": "Şahbaz Pano", "amount": "≈ EUR 100,000 / year", "scope": "Raycap surge protection, TE Connectivity relays & terminal blocks" },
+      { "company": "Renpro", "amount": "≈ EUR 150,000 / year", "scope": "Schrack relay and terminal block products" }
+    ],
+    "eventsLabel": "Brand Visibility & Events",
+    "events": [
+      { "title": "TE Connectivity Days", "body": "A proposed annual industry event in Istanbul or Ankara, bringing together engineers, panel builders, OEMs, EPCs and system integrators around technical seminars and product demonstrations." },
+      { "title": "EIF Antalya 2026", "body": "Green Pi Energy will participate in the EIF Energy Congress & Expo, Antalya, November 2026 — meeting renewable energy investors, EPCs and industrial manufacturers." },
+      { "title": "Green Pi Cup", "body": "An annual equestrian sponsorship at Atlıspor Club, combining corporate visibility with long-term relationship building." },
+      { "title": "Ankara Golf Club", "body": "Tournament sponsorship since 2026 — an area we aim to extend into joint sponsorship with TE Connectivity." }
     ]
   },
   "contact": {
     "kicker": "Contact",
-    "title": "Let's talk about a piece",
-    "body": "For commissions, exhibitions, or collaborations, reach out to the studio directly.",
+    "title": "Let's build the market for TE Connectivity together",
+    "body": "For partnership discussions, technical collaboration, or to explore the TE Connectivity growth strategy in Türkiye, reach out to us directly.",
     "cta": "Send an email",
-    "location": "Kuzguncuk, Istanbul"
+    "location": "Gümüş Cd. No:40, Konutkent, 06810 Yenimahalle/Ankara"
   },
   "footer": {
     "rights": "All rights reserved."
