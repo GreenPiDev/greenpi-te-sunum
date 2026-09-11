@@ -65,7 +65,7 @@
   "exhibitions": {
     "kicker": "Referanslar",
     "title": "Proje Deneyimi & Büyüme",
-    "projectsLabel": "Seçilmiş Proje Deneyimi",
+    "projectsLabel": "Tamamlanan Projeler",
     "items": [
       { "year": "Anahtar Teslim", "title": "Merkez Ankara – İller Bankası OG Trafo Merkezi", "place": "Mühendislik, tedarik & devreye alma" },
       { "year": "Anahtar Teslim", "title": "Merkez Ankara Otopark OG Trafo Merkezi", "place": "Tamamlandı & devreye alındı" },

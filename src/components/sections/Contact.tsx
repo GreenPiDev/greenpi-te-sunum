@@ -1,14 +1,12 @@
 import { useLayoutEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import { gsap } from '../../lib/gsapConfig'
-import { useIsTouchDevice, pinnableQuery } from '../../lib/hooks/useMediaQuery'
+import { pinnableQuery } from '../../lib/hooks/useMediaQuery'
 
 export function Contact() {
   const { t } = useTranslation()
   const sectionRef = useRef<HTMLElement>(null)
   const trackRef = useRef<HTMLDivElement>(null)
-  const buttonRef = useRef<HTMLAnchorElement>(null)
-  const isTouch = useIsTouchDevice()
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -40,34 +38,6 @@ export function Contact() {
     return () => ctx.revert()
   }, [])
 
-  useLayoutEffect(() => {
-    if (isTouch) return
-    const btn = buttonRef.current
-    if (!btn) return
-
-    const moveX = gsap.quickTo(btn, 'x', { duration: 0.4, ease: 'power3.out' })
-    const moveY = gsap.quickTo(btn, 'y', { duration: 0.4, ease: 'power3.out' })
-
-    const onMove = (e: MouseEvent) => {
-      const rect = btn.getBoundingClientRect()
-      const relX = e.clientX - (rect.left + rect.width / 2)
-      const relY = e.clientY - (rect.top + rect.height / 2)
-      moveX(relX * 0.35)
-      moveY(relY * 0.35)
-    }
-    const onLeave = () => {
-      moveX(0)
-      moveY(0)
-    }
-
-    btn.addEventListener('mousemove', onMove)
-    btn.addEventListener('mouseleave', onLeave)
-    return () => {
-      btn.removeEventListener('mousemove', onMove)
-      btn.removeEventListener('mouseleave', onLeave)
-    }
-  }, [isTouch])
-
   return (
     <section
       id="contact"
@@ -86,13 +56,50 @@ export function Contact() {
             </h2>
             <p className="mt-6 max-w-md text-base text-stone-dim sm:text-lg">{t('contact.body')}</p>
 
-            <a
-              ref={buttonRef}
-              href="mailto:info@greenpi.com.tr"
-              className="mt-12 inline-flex h-32 w-32 items-center justify-center rounded-full border border-blue text-center text-sm uppercase tracking-widest text-ink transition-colors hover:bg-blue hover:text-canvas sm:h-40 sm:w-40"
-            >
-              {t('contact.cta')}
-            </a>
+            <div className="mt-12 flex flex-col items-start gap-3">
+              <a
+                href="mailto:info@greenpi.com.tr"
+                className="font-display text-2xl transition-colors hover:text-green sm:text-3xl"
+              >
+                info@greenpi.com.tr
+              </a>
+              <a
+                href="tel:+905468582020"
+                className="font-display text-2xl transition-colors hover:text-green sm:text-3xl"
+              >
+                +90 546 858 20 20
+              </a>
+            </div>
+
+            <div className="mt-10 flex items-center gap-5">
+              <a
+                href="https://www.instagram.com/greenpienergy/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Instagram"
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-ink/20 text-ink transition-colors hover:border-green hover:text-green"
+              >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" className="h-5 w-5">
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/greenpienergy/posts/?feedView=all"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="LinkedIn"
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-ink/20 text-ink transition-colors hover:border-green hover:text-green"
+              >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" className="h-5 w-5">
+                  <rect x="3" y="3" width="18" height="18" rx="3" />
+                  <line x1="7.5" y1="10" x2="7.5" y2="17" />
+                  <circle cx="7.5" cy="6.8" r="0.9" fill="currentColor" stroke="none" />
+                  <path d="M11.5 17v-4.5c0-1.4 1-2.3 2.3-2.3s2.2.9 2.2 2.3V17" />
+                </svg>
+              </a>
+            </div>
           </div>
 
           <footer className="mt-24 flex flex-col gap-2 border-t border-ink/15 pt-8 text-xs uppercase tracking-widest text-stone-dim sm:flex-row sm:items-center sm:justify-between">

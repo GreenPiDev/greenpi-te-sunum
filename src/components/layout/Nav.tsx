@@ -22,6 +22,7 @@ const linkIds = links.map((link) => link.id)
 export function Nav() {
   const { t } = useTranslation()
   const [open, setOpen] = useState(false)
+  const [hovered, setHovered] = useState<string | null>(null)
   const theme = useSectionTheme()
   const isLight = theme === 'light'
   const active = useActiveSection(linkIds)
@@ -65,25 +66,34 @@ export function Nav() {
           </button>
 
           <nav
+            onMouseLeave={() => setHovered(null)}
             className={clsx(
               'hidden items-center gap-8 text-sm uppercase tracking-widest transition-colors md:flex',
               isLight ? 'text-ink' : 'text-canvas',
             )}
           >
-            {links.map((link) => (
-              <button
-                key={link.id}
-                onClick={() => goTo(link.id)}
-                className={clsx(
-                  'relative origin-center transition-all duration-300',
-                  link.id === active
-                    ? 'scale-110 font-bold text-green opacity-100'
-                    : 'opacity-80 hover:opacity-100',
-                )}
-              >
-                {t(link.key)}
-              </button>
-            ))}
+            {links.map((link) => {
+              const isActive = link.id === active
+              const isHovered = hovered === link.id
+              const receded = hovered !== null && !isHovered
+
+              return (
+                <button
+                  key={link.id}
+                  onClick={() => goTo(link.id)}
+                  onMouseEnter={() => setHovered(link.id)}
+                  className={clsx(
+                    'relative origin-center transition-all duration-300',
+                    isActive && 'font-bold text-green',
+                    isHovered && 'z-10 scale-125 opacity-100',
+                    !isHovered && receded && 'scale-90 opacity-50',
+                    !isHovered && !receded && (isActive ? 'scale-110 opacity-100' : 'opacity-80'),
+                  )}
+                >
+                  {t(link.key)}
+                </button>
+              )
+            })}
           </nav>
 
           <div className="hidden md:block">
