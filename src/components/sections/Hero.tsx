@@ -49,9 +49,16 @@ export function Hero() {
     <section
       id="hero"
       ref={sectionRef}
+      data-nav-theme="dark"
       className="relative flex h-[100svh] items-end overflow-hidden bg-ink"
     >
       <div ref={backdropRef} className="absolute inset-0">
+        <img
+          src="/images/hero-background.jpg"
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
         <div
           className="absolute inset-0"
           style={{

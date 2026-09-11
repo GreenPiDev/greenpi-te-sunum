@@ -31,7 +31,7 @@ export function Gallery() {
   }, [])
 
   return (
-    <section id="gallery" ref={sectionRef} className="relative bg-ink px-6 py-24 sm:px-10 sm:py-32">
+    <section id="gallery" ref={sectionRef} data-nav-theme="dark" className="relative bg-ink px-6 py-24 sm:px-10 sm:py-32">
       <div className="mb-16 sm:mb-20">
         <p className="text-xs uppercase tracking-[0.3em] text-blue-soft">{t('gallery.kicker')}</p>
         <h2 className="font-display mt-4 max-w-2xl text-4xl text-canvas sm:text-6xl">

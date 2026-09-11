@@ -1,11 +1,15 @@
 import { useEffect, useRef } from 'react'
+import clsx from 'clsx'
 import { gsap } from '../../lib/gsapConfig'
 import { useIsTouchDevice } from '../../lib/hooks/useMediaQuery'
+import { useSectionTheme } from '../../lib/hooks/useSectionTheme'
 
 export function Cursor() {
   const dotRef = useRef<HTMLDivElement>(null)
   const ringRef = useRef<HTMLDivElement>(null)
   const isTouch = useIsTouchDevice()
+  const theme = useSectionTheme()
+  const isLight = theme === 'light'
 
   useEffect(() => {
     if (isTouch) return
@@ -47,14 +51,20 @@ export function Cursor() {
   if (isTouch) return null
 
   return (
-    <div className="pointer-events-none fixed inset-0 z-[60] hidden mix-blend-difference md:block">
+    <div className="pointer-events-none fixed inset-0 z-[60] hidden md:block">
       <div
         ref={dotRef}
-        className="absolute h-1.5 w-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-canvas"
+        className={clsx(
+          'absolute h-1.5 w-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full transition-colors',
+          isLight ? 'bg-ink' : 'bg-canvas',
+        )}
       />
       <div
         ref={ringRef}
-        className="absolute h-8 w-8 -translate-x-1/2 -translate-y-1/2 rounded-full border border-canvas"
+        className={clsx(
+          'absolute h-8 w-8 -translate-x-1/2 -translate-y-1/2 rounded-full border transition-colors',
+          isLight ? 'border-ink' : 'border-canvas',
+        )}
       />
     </div>
   )

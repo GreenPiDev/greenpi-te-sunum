@@ -34,7 +34,7 @@ export function Process() {
   }, [])
 
   return (
-    <section id="process" ref={sectionRef} className="relative bg-canvas px-6 py-24 text-ink sm:px-10 sm:py-36">
+    <section id="process" ref={sectionRef} data-nav-theme="light" className="relative bg-canvas px-6 py-24 text-ink sm:px-10 sm:py-36">
       <div className="mx-auto max-w-6xl">
         <div className="flex flex-col gap-10 sm:flex-row sm:items-end sm:justify-between">
           <div>

@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import clsx from 'clsx'
 import { getLenis } from '../../lib/lenis'
 import { ScrollTrigger } from '../../lib/gsapConfig'
+import { useSectionTheme } from '../../lib/hooks/useSectionTheme'
 import { LanguageSwitch } from './LanguageSwitch'
 
 const links = [
@@ -18,6 +19,8 @@ const links = [
 export function Nav() {
   const { t } = useTranslation()
   const [open, setOpen] = useState(false)
+  const theme = useSectionTheme()
+  const isLight = theme === 'light'
 
   useEffect(() => {
     const lenis = getLenis()
@@ -45,16 +48,24 @@ export function Nav() {
 
   return (
     <>
-      <header className="fixed inset-x-0 top-0 z-50 mix-blend-difference">
+      <header className="fixed inset-x-0 top-0 z-50">
         <div className="flex items-center justify-between px-6 py-5 sm:px-10 sm:py-7">
           <button
             onClick={() => goTo('hero')}
-            className="font-display text-lg tracking-wide text-canvas sm:text-xl"
+            className={clsx(
+              'font-display text-lg tracking-wide transition-colors sm:text-xl',
+              isLight ? 'text-ink' : 'text-canvas',
+            )}
           >
             {t('nav.brand')}
           </button>
 
-          <nav className="hidden items-center gap-8 text-sm uppercase tracking-widest text-canvas md:flex">
+          <nav
+            className={clsx(
+              'hidden items-center gap-8 text-sm uppercase tracking-widest transition-colors md:flex',
+              isLight ? 'text-ink' : 'text-canvas',
+            )}
+          >
             {links.map((link) => (
               <button
                 key={link.id}
@@ -67,7 +78,7 @@ export function Nav() {
           </nav>
 
           <div className="hidden md:block">
-            <LanguageSwitch className="text-canvas" />
+            <LanguageSwitch theme={theme} />
           </div>
 
           <button
@@ -77,13 +88,15 @@ export function Nav() {
           >
             <span
               className={clsx(
-                'h-px w-6 bg-canvas transition-transform',
+                'h-px w-6 transition-transform',
+                isLight && !open ? 'bg-ink' : 'bg-canvas',
                 open && 'translate-y-[3.5px] rotate-45',
               )}
             />
             <span
               className={clsx(
-                'h-px w-6 bg-canvas transition-transform',
+                'h-px w-6 transition-transform',
+                isLight && !open ? 'bg-ink' : 'bg-canvas',
                 open && '-translate-y-[3.5px] -rotate-45',
               )}
             />

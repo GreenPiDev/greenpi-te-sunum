@@ -55,7 +55,7 @@ export function Exhibitions() {
   }, [])
 
   return (
-    <section id="exhibitions" ref={sectionRef} className="relative overflow-hidden bg-ink px-6 py-24 sm:px-10 sm:py-36">
+    <section id="exhibitions" ref={sectionRef} data-nav-theme="dark" className="relative overflow-hidden bg-ink px-6 py-24 sm:px-10 sm:py-36">
       <div
         className="absolute inset-0"
         style={{

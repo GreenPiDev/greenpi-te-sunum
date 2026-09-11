@@ -59,6 +59,7 @@ export function Contact() {
     <section
       id="contact"
       ref={sectionRef}
+      data-nav-theme="dark"
       className="relative flex min-h-[90vh] flex-col justify-between bg-ink px-6 py-24 sm:px-10 sm:py-32"
     >
       <div>

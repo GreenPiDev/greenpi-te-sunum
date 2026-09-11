@@ -30,7 +30,7 @@ export function Opportunities() {
   }, [])
 
   return (
-    <section id="opportunities" ref={sectionRef} className="relative bg-ink px-6 py-24 sm:px-10 sm:py-36">
+    <section id="opportunities" ref={sectionRef} data-nav-theme="dark" className="relative bg-ink px-6 py-24 sm:px-10 sm:py-36">
       <div className="mx-auto max-w-5xl">
         <p className="text-xs uppercase tracking-[0.3em] text-blue-soft">{t('opportunities.kicker')}</p>
         <h2 className="font-display mt-4 max-w-3xl text-4xl leading-tight text-canvas sm:text-6xl">

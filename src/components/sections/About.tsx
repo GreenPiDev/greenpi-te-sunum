@@ -45,19 +45,30 @@ export function About() {
   }, [])
 
   return (
-    <section id="about" ref={sectionRef} className="relative overflow-hidden bg-ink py-24 sm:py-0">
+    <section id="about" ref={sectionRef} data-nav-theme="dark" className="relative overflow-hidden bg-ink py-24 sm:py-0">
       <div
         ref={trackRef}
         className="flex flex-col gap-16 px-6 sm:h-screen sm:flex-row sm:items-center sm:gap-0 sm:px-0"
       >
-        <div className="flex flex-col justify-center gap-6 sm:h-full sm:w-screen sm:shrink-0 sm:px-16 lg:px-28">
-          <p className="text-xs uppercase tracking-[0.3em] text-blue-soft">{t('about.kicker')}</p>
-          <h2 className="font-display max-w-3xl text-4xl leading-tight text-canvas sm:text-6xl lg:text-7xl">
-            {t('about.title')}
-          </h2>
-          <p className="max-w-2xl text-base leading-relaxed text-stone sm:text-lg">
-            {t('about.body')}
-          </p>
+        <div className="relative flex flex-col justify-center gap-6 sm:h-full sm:w-screen sm:shrink-0 sm:px-16 lg:px-28">
+          <img
+            src="/images/founder-serhat-celik.jpg"
+            alt={t('about.founderAlt')}
+            className="pointer-events-none absolute inset-y-0 -right-48 h-full w-auto object-contain opacity-15 sm:opacity-20"
+            style={{
+              maskImage: 'linear-gradient(to right, transparent, black 35%)',
+              WebkitMaskImage: 'linear-gradient(to right, transparent, black 35%)',
+            }}
+          />
+          <div className="relative flex max-w-3xl flex-col gap-6">
+            <p className="text-xs uppercase tracking-[0.3em] text-blue-soft">{t('about.kicker')}</p>
+            <h2 className="font-display max-w-3xl text-4xl leading-tight text-canvas sm:text-6xl lg:text-7xl">
+              {t('about.title')}
+            </h2>
+            <p className="max-w-2xl text-base leading-relaxed text-stone sm:text-lg">
+              {t('about.body')}
+            </p>
+          </div>
         </div>
 
         {stats.map((stat) => (

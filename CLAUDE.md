@@ -109,7 +109,6 @@ Yeni eklenecek olası bir section: **Marka Portföyü** (Distributorship / Autho
 - Responsive kontrol (mobil/tablet/masaüstü).
 - Scroll animasyonlarının yeni, daha uzun içerikle performansı (özellikle Faz 5'teki uzun liste bölümleri).
 - Erişilebilirlik (kontrast — yeni renk paletinde metin/zemin kontrastı test edilmeli, özellikle sarı vurgu rengi arka plan üstünde).
-- SEO/meta etiketleri, sayfa başlığı ("Green Pi Energy × TE Connectivity").
 - **Çıktı:** Yayına hazır sunum sitesi.
 
 ### Faz 11 — Yayınlama
