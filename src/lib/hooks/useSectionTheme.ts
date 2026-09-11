@@ -14,7 +14,7 @@ export function useSectionTheme() {
         const next = visible.target.getAttribute('data-nav-theme') === 'light' ? 'light' : 'dark'
         setTheme(next)
       },
-      { rootMargin: '-50% 0px -49% 0px', threshold: 0 },
+      { rootMargin: '0px 0px -90% 0px', threshold: 0 },
     )
 
     sections.forEach((section) => observer.observe(section))
