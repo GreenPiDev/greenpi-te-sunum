@@ -130,7 +130,7 @@ export const growthPhases: GrowthPhase[] = [
     phaseTitle: { tr: 'OEM Genişlemesi & Standardizasyon', en: 'OEM Expansion & Standardization' },
     target: '€1.50M',
     body: {
-      tr: 'İkinci yılda ana hedefimiz, ürün tanıtımından ürün standardizasyonu aşamasına geçmektir — TE Connectivity ürünlerinin BOM listelerine, üretim standartlarına, approved vendor listelerine, standart pano dizaynlarına ve yıllık satın alma programlarına dahil edilmesi hedeflenmektedir.',
+      tr: 'İkinci yılda ana hedefimiz, ürün tanıtımından ürün standardizasyonu aşamasına geçmektir — TE Connectivity ürünlerinin BOM listelerine, üretim standartlarına, onaylı tedarikçi listelerine, standart pano dizaynlarına ve yıllık satın alma programlarına dahil edilmesi hedeflenmektedir.',
       en: 'In the second year, our primary objective is to move from product introduction to product standardization — integrating TE Connectivity products into BOM lists, production standards, approved vendor lists, standard panel designs and annual purchasing programs.',
     },
     objectives: [
@@ -171,7 +171,7 @@ export const growthPhases: GrowthPhase[] = [
     phaseTitle: { tr: 'Pazar Geliştirme & Ülke Geneli Büyüme', en: 'Market Development & Nationwide Growth' },
     target: '€2.625M',
     body: {
-      tr: "Üçüncü yıl itibarıyla Green Pi Energy'nin rolü yalnızca bayi veya ürün tedarikçisi seviyesinde kalmayacak; hedeflenen pozisyon Market Development & Solution Partner olacaktır. Görevimiz yalnızca gelen taleplere fiyat vermek değil, yeni müşteri bulmak, yeni uygulama alanları oluşturmak, OEM standartlarına girmek ve TE Connectivity için yeni iş hacmi yaratmak olacaktır.",
+      tr: "Üçüncü yıl itibarıyla Green Pi Energy'nin rolü yalnızca bayi veya ürün tedarikçisi seviyesinde kalmayacak; hedeflenen pozisyon Pazar Geliştirme ve Çözüm Ortağı olacaktır. Görevimiz yalnızca gelen taleplere fiyat vermek değil, yeni müşteri bulmak, yeni uygulama alanları oluşturmak, OEM standartlarına girmek ve TE Connectivity için yeni iş hacmi yaratmak olacaktır.",
       en: "By the third year, Green Pi Energy's role will move beyond that of a distributor or product supplier — the target position is Market Development & Solution Partner. Our task will not simply be to quote incoming requests, but to find new customers, create new application areas, enter OEM standards, and generate new business volume for TE Connectivity.",
     },
     objectives: [

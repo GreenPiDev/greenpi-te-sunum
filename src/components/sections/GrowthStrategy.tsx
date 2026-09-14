@@ -84,7 +84,7 @@ export function GrowthStrategy() {
         <p className="mt-6 max-w-3xl text-base leading-relaxed text-stone sm:text-lg">
           {t('growth.intro')}
         </p>
-        <p className="mt-4 max-w-3xl text-sm leading-relaxed text-stone-dim">
+        <p className="mt-4 max-w-3xl text-sm leading-relaxed text-stone">
           {t('growth.introNote')}
         </p>
 
@@ -144,7 +144,7 @@ export function GrowthStrategy() {
             <div key={phase.id} data-reveal className="flex flex-1 flex-col gap-2 py-6 sm:px-6 sm:py-0 first:sm:pl-0 last:sm:pr-0">
               <span className="text-xs uppercase tracking-[0.3em] text-stone">{phase.yearLabel[lang]}</span>
               <span className="font-display text-3xl text-green sm:text-4xl lg:text-5xl">{phase.target}</span>
-              <span className="text-sm leading-snug text-stone-dim">{phase.phaseTitle[lang]}</span>
+              <span className="text-sm leading-snug text-stone">{phase.phaseTitle[lang]}</span>
             </div>
           ))}
         </div>
@@ -152,12 +152,7 @@ export function GrowthStrategy() {
 
       {/* Year-by-year phases — horizontal pinned scroll on desktop */}
       <div className="mt-16 sm:mt-24">
-        <div className="mx-auto max-w-6xl px-0">
-          <h3 className="text-xs uppercase tracking-[0.3em] text-stone">{t('growth.phasesLabel')}</h3>
-          <p className="mt-2 text-sm text-stone-dim sm:hidden">{t('growth.phasesHint')}</p>
-        </div>
-
-        <div ref={pinRef} className="relative mt-8 sm:h-screen sm:overflow-hidden">
+        <div ref={pinRef} className="relative sm:h-screen sm:overflow-hidden">
           <div
             ref={trackRef}
             className="flex flex-col gap-16 px-6 sm:h-screen sm:flex-row sm:items-center sm:gap-0 sm:px-0"
