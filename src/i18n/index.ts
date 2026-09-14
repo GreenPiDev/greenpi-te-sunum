@@ -12,11 +12,11 @@ i18n
       tr: { translation: tr },
       en: { translation: en },
     },
-    fallbackLng: 'tr',
+    fallbackLng: 'en',
     supportedLngs: ['tr', 'en'],
     interpolation: { escapeValue: false },
     detection: {
-      order: ['localStorage', 'navigator'],
+      order: ['localStorage'],
       caches: ['localStorage'],
     },
   })
