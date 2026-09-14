@@ -21,16 +21,16 @@ export function About() {
       mm.add(pinnableQuery, () => {
         const track = trackRef.current
         if (!track) return
-        const distance = track.scrollWidth - window.innerWidth
+        const getDistance = () => track.scrollWidth - window.innerWidth
 
         gsap.to(track, {
-          x: -distance,
+          x: () => -getDistance(),
           ease: 'none',
           scrollTrigger: {
             id: 'about-scroll',
             trigger: sectionRef.current,
             start: 'top top',
-            end: () => `+=${distance}`,
+            end: () => `+=${getDistance()}`,
             scrub: 1,
             pin: true,
             invalidateOnRefresh: true,
@@ -74,10 +74,10 @@ export function About() {
         {stats.map((stat) => (
           <div
             key={stat.label}
-            className="flex flex-col justify-center gap-4 border-t border-stone-dim pt-8 sm:h-full sm:w-[55vw] sm:shrink-0 sm:border-t-0 sm:border-l sm:px-16 sm:pt-0 lg:w-[42vw] lg:px-28"
+            className="flex flex-col justify-center gap-4 border-t border-stone-dim pt-8 sm:h-full sm:w-max sm:shrink-0 sm:border-t-0 sm:border-l sm:px-16 sm:pt-0 lg:px-24"
           >
             <span className="font-display text-7xl text-green sm:text-9xl">{stat.value}</span>
-            <span className="whitespace-nowrap text-sm uppercase tracking-widest text-stone">{stat.label}</span>
+            <span className="whitespace-pre-line text-sm uppercase tracking-widest text-stone">{stat.label}</span>
           </div>
         ))}
       </div>

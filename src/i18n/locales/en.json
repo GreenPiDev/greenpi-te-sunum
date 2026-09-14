@@ -5,6 +5,7 @@
     "gallery": "Activities",
     "partners": "Partners",
     "process": "Strategy",
+    "growth": "5-Year Plan",
     "opportunities": "Opportunities",
     "exhibitions": "Projects",
     "contact": "Contact"
@@ -23,7 +24,7 @@
     "stat1Value": "2023",
     "stat1Label": "Founded in Ankara, Türkiye",
     "stat2Value": "5",
-    "stat2Label": "Business pillars: Energy, Engineering, Technology, Software, Agriculture",
+    "stat2Label": "Business pillars: Energy, Engineering, Technology,\nSoftware, Agriculture",
     "stat3Value": "13+",
     "stat3Label": "International brand partnerships"
   },
@@ -55,6 +56,28 @@
     "targetOems": ["Astor", "Europower", "Elko", "Çağdaş Pano", "Hawk Power", "CW Enerji", "Voltberg", "Ekos"],
     "visionLabel": "Our Vision",
     "visionBody": "Green Pi Energy's long-term objective is to become an international solution company that brings together energy, engineering, technology, and digitalization under one roof — expanding engineering, product supply, system integration, and project development activities across Europe, the Middle East, the Caucasus, and surrounding markets."
+  },
+  "growth": {
+    "kicker": "TE Connectivity – 5-Year Growth Strategy",
+    "title": "A 5-year growth strategy, planned by product group",
+    "intro": "We see the business model we aim to build with TE Connectivity not as a short-term sales target, but as a five-year growth strategy planned and measured at the product-group level. Green Pi Energy's goal is to build a sustainable structure in the Turkish market for TE Connectivity's Terminal Blocks, Relays, ESSAILEC, and Measurement & Monitoring product groups — integrating TE Connectivity products into the standard product lists of major OEM manufacturers, and over time bringing new TE Connectivity products into the Turkish market.",
+    "introNote": "The figures presented here should be understood as strategic sales targets, not a sales forecast. Our goal is not simply to reach a given sales volume, but to build a long-term, scalable market in Türkiye together with TE Connectivity.",
+    "tableLabel": "1 / 2 / 3 / 5 Year Sales Target",
+    "tableProductHeader": "Product Group",
+    "tableTotalRow": "Total Target",
+    "tableNote": "In this distribution, Terminal Blocks is positioned as the primary volume product group given its broad OEM and panel-builder customer base. Relays represents the second major growth area, while ESSAILEC is targeted for development particularly in energy, protection, measurement, utility and substation applications. For Measurement, Monitoring and other strategic TE Connectivity product groups, growth will be supported by identifying suitable new products from TE Connectivity's global portfolio for the Turkish market.",
+    "ambitionLabel": "Our 5-Year Ambition with TE Connectivity",
+    "phasesLabel": "Year by Year",
+    "phasesHint": "Scroll to explore each phase",
+    "objectivesLabel": "Key Objectives",
+    "modelLabel": "Our Growth Model",
+    "modelIntro": "We do not believe this growth can be achieved simply by selling more products. Our growth model is built on:",
+    "modelVendorIntro": "On the OEM side in particular, our core objective is for TE Connectivity products to become part of customers':",
+    "modelClosing": "This approach will drive the shift from one-off orders to a recurring and predictable annual business model.",
+    "objectiveLabel": "Our Long-Term Objective",
+    "objectiveQuote": "Our objective is not simply to achieve €8 million in sales. Our objective is to build a sustainable TE Connectivity market in Türkiye.",
+    "objectiveBody": "We aim to build a market where TE Connectivity products become the standard, preferred choice among OEM manufacturers, panel builders, EPC companies, energy companies and major industrial customers.",
+    "objectiveClosing": "Green Pi Energy's long-term goal: to create demand, develop the market and build sustainable growth for TE Connectivity in Türkiye."
   },
   "opportunities": {
     "kicker": "Market Development",

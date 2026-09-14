@@ -28,16 +28,16 @@ export function Partners() {
       mm.add(pinnableQuery, () => {
         const track = trackRef.current
         if (!track) return
-        const distance = track.scrollWidth - window.innerWidth
+        const getDistance = () => track.scrollWidth - window.innerWidth
 
         gsap.to(track, {
-          x: -distance,
+          x: () => -getDistance(),
           ease: 'none',
           scrollTrigger: {
             id: 'partners-scroll',
             trigger: pinRef.current,
             start: 'top top',
-            end: () => `+=${distance}`,
+            end: () => `+=${getDistance()}`,
             scrub: 1,
             pin: true,
             invalidateOnRefresh: true,

@@ -7,6 +7,7 @@ import { About } from './components/sections/About'
 import { Gallery } from './components/sections/Gallery'
 import { Partners } from './components/sections/Partners'
 import { Process } from './components/sections/Process'
+import { GrowthStrategy } from './components/sections/GrowthStrategy'
 import { Opportunities } from './components/sections/Opportunities'
 import { Exhibitions } from './components/sections/Exhibitions'
 import { Contact } from './components/sections/Contact'
@@ -27,6 +28,7 @@ function App() {
         <Gallery />
         <Partners />
         <Process />
+        <GrowthStrategy />
         <Opportunities />
         <Exhibitions />
         <Contact />

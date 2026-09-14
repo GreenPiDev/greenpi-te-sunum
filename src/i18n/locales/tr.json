@@ -5,6 +5,7 @@
     "gallery": "Faaliyetler",
     "partners": "Ortaklıklar",
     "process": "Strateji",
+    "growth": "5 Yıllık Plan",
     "opportunities": "Fırsatlar",
     "exhibitions": "Projeler",
     "contact": "İletişim"
@@ -23,7 +24,7 @@
     "stat1Value": "2023",
     "stat1Label": "Ankara, Türkiye'de kuruldu",
     "stat2Value": "5",
-    "stat2Label": "İş kolu: Enerji, Mühendislik, Teknoloji, Yazılım, Tarım",
+    "stat2Label": "İş kolu: Enerji, Mühendislik, Teknoloji,\nYazılım, Tarım",
     "stat3Value": "13+",
     "stat3Label": "Uluslararası marka ortaklığı"
   },
@@ -55,6 +56,28 @@
     "targetOems": ["Astor", "Europower", "Elko", "Çağdaş Pano", "Hawk Power", "CW Enerji", "Voltberg", "Ekos"],
     "visionLabel": "Vizyonumuz",
     "visionBody": "Green Pi Enerji'nin uzun vadeli hedefi; enerji, mühendislik, teknoloji ve dijitalleşmeyi tek çatı altında birleştiren uluslararası bir çözüm şirketi olmaktır — mühendislik, ürün tedariki, sistem entegrasyonu ve proje geliştirme faaliyetlerini Avrupa, Orta Doğu, Kafkasya ve çevre pazarlara genişletmek."
+  },
+  "growth": {
+    "kicker": "TE Connectivity – 5 Yıllık Büyüme Stratejisi",
+    "title": "Ürün grubu bazında planlanmış 5 yıllık büyüme stratejisi",
+    "intro": "TE Connectivity ile oluşturmayı hedeflediğimiz iş modelini yalnızca kısa vadeli bir satış hedefi olarak değil, ürün grubu bazında planlanmış ve ölçülebilir bir 5 yıllık büyüme stratejisi olarak değerlendiriyoruz. Green Pi Energy'nin hedefi; Terminal Blocks, Relays, ESSAILEC ve Measurement & Monitoring ürün gruplarında Türkiye pazarında sürdürülebilir bir yapı oluşturmak, TE Connectivity ürünlerini önemli OEM üreticilerinin standart ürün listelerine dahil etmek ve zaman içerisinde yeni TE Connectivity ürünlerini Türkiye pazarına kazandırmaktır.",
+    "introNote": "Burada belirtilen rakamlar sales forecast değil, strategic sales targets olarak değerlendirilmelidir. Amaç yalnızca belirli bir satış hacmine ulaşmak değil; TE Connectivity ile birlikte Türkiye'de uzun vadeli ve ölçeklenebilir bir pazar oluşturmaktır.",
+    "tableLabel": "1 / 2 / 3 / 5 Yıl Satış Hedefi",
+    "tableProductHeader": "Ürün Grubu",
+    "tableTotalRow": "Toplam Hedef",
+    "tableNote": "Bu dağılımda Terminal Blocks, geniş OEM ve pano üreticisi müşteri tabanı nedeniyle ana hacim ürün grubu olarak konumlandırılmaktadır. Relays, ikinci büyük büyüme alanını oluştururken; ESSAILEC grubunun özellikle enerji, koruma, ölçüm, utility ve trafo merkezi uygulamalarında geliştirilmesi hedeflenmektedir. Measurement, Monitoring ve diğer stratejik TE Connectivity ürün gruplarında ise, TE Connectivity'nin global ürün portföyünden Türkiye pazarı için uygun yeni ürünlerin belirlenmesi ve pazara kazandırılmasıyla büyümenin desteklenmesi planlanmaktadır.",
+    "ambitionLabel": "TE Connectivity ile 5 Yıllık Hedefimiz",
+    "phasesLabel": "Yıllara Göre",
+    "phasesHint": "Her fazı görmek için kaydırın",
+    "objectivesLabel": "Temel Hedefler",
+    "modelLabel": "Büyüme Modelimiz",
+    "modelIntro": "Bu büyümenin yalnızca daha fazla ürün satılarak gerçekleştirilebileceğine inanmıyoruz. Büyüme modelimiz şu unsurlar üzerine kurulacaktır:",
+    "modelVendorIntro": "Özellikle OEM tarafında temel amacımız, TE Connectivity ürünlerinin müşterilerin şu listelerine dahil edilmesidir:",
+    "modelClosing": "Bu yaklaşım, tek seferlik siparişlerden recurring and predictable annual business modeline geçiş sağlayacaktır.",
+    "objectiveLabel": "Uzun Vadeli Hedefimiz",
+    "objectiveQuote": "Amacımız yalnızca 8 milyon € satışa ulaşmak değil. Amacımız Türkiye'de sürdürülebilir bir TE Connectivity pazarı inşa etmektir.",
+    "objectiveBody": "TE Connectivity ürünlerinin; OEM üreticileri, pano imalatçıları, EPC firmaları, enerji şirketleri ve büyük endüstriyel müşteriler tarafından standart ve tercih edilen ürünler haline geldiği bir pazar oluşturmayı hedefliyoruz.",
+    "objectiveClosing": "Green Pi Energy'nin uzun vadeli amacı: TE Connectivity için Türkiye'de talep yaratmak, pazarı geliştirmek ve sürdürülebilir büyüme inşa etmek."
   },
   "opportunities": {
     "kicker": "Pazar Geliştirme",
