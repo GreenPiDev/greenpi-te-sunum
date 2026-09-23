@@ -38,6 +38,11 @@ export function Nav() {
     const lenis = getLenis()
     lenis?.start()
 
+    if (id === 'hero') {
+      lenis?.scrollTo(0, { duration: 1.4 })
+      return
+    }
+
     if (id === 'about') {
       const trigger = ScrollTrigger.getById('about-scroll')
       if (trigger) {
