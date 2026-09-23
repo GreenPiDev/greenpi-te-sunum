@@ -23,14 +23,37 @@ export function Nav() {
   const { t } = useTranslation()
   const [open, setOpen] = useState(false)
   const [hovered, setHovered] = useState<string | null>(null)
+  const [hidden, setHidden] = useState(false)
   const theme = useSectionTheme()
   const isLight = theme === 'light'
   const active = useActiveSection(linkIds)
 
   useEffect(() => {
     const lenis = getLenis()
-    if (open) lenis?.stop()
-    else lenis?.start()
+    if (open) {
+      lenis?.stop()
+      setHidden(false)
+    } else {
+      lenis?.start()
+    }
+  }, [open])
+
+  useEffect(() => {
+    const lenis = getLenis()
+    if (!lenis) return
+
+    const onScroll = ({ scroll, direction }: { scroll: number; direction: 1 | -1 | 0 }) => {
+      if (open) return
+      if (scroll < 80) {
+        setHidden(false)
+        return
+      }
+      if (direction === 1) setHidden(true)
+      else if (direction === -1) setHidden(false)
+    }
+
+    lenis.on('scroll', onScroll)
+    return () => lenis.off('scroll', onScroll)
   }, [open])
 
   const goTo = (id: string) => {
@@ -58,12 +81,17 @@ export function Nav() {
 
   return (
     <>
-      <header className="fixed inset-x-0 top-0 z-50">
+      <header
+        className={clsx(
+          'fixed inset-x-0 top-0 z-50 transition-transform duration-500 ease-out',
+          hidden ? '-translate-y-full' : 'translate-y-0',
+        )}
+      >
         <div className="flex items-center justify-between px-6 py-5 sm:px-10 sm:py-7">
           <button
             onClick={() => goTo('hero')}
             className={clsx(
-              'font-display text-lg tracking-wide transition-colors sm:text-xl',
+              'font-display text-lg tracking-wide transition-colors hover:text-green sm:text-xl',
               isLight ? 'text-ink' : 'text-canvas',
             )}
           >
