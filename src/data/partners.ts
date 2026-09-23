@@ -79,8 +79,8 @@ export const partnerGroups: PartnerGroup[] = [
         },
       },
       {
-        name: 'Sertech',
-        logo: 'sertech',
+        name: 'Sertec S.R.L',
+        logo: 'sertec',
         scope: {
           tr: 'Endüstriyel uygulamalar için özel elektrik ürünleri ve çözümleri.',
           en: 'Specialized electrical products and solutions for industrial applications.',
