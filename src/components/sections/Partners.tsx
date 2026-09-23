@@ -5,10 +5,6 @@ import { gsap } from '../../lib/gsapConfig'
 import { pinnableQuery } from '../../lib/hooks/useMediaQuery'
 import { partnerGroups } from '../../data/partners'
 
-const marqueeLogos = partnerGroups
-  .flatMap((group) => group.partners)
-  .filter((partner) => Boolean(partner.logo))
-
 export function Partners() {
   const { t, i18n } = useTranslation()
   const lang = i18n.language.startsWith('en') ? 'en' : 'tr'
@@ -134,35 +130,6 @@ export function Partners() {
               </div>
             )
           })}
-        </div>
-      </div>
-
-      <div className="mx-auto max-w-5xl px-6 pb-24 sm:px-10 sm:pb-36">
-        <div className="relative flex flex-col items-center border-t border-ink/15 pt-10 text-center">
-          <h3 className="text-xs uppercase tracking-[0.3em] text-stone-dim">
-            {t('partners.ecosystemLabel')}
-          </h3>
-          <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-stone-dim">
-            {t('partners.ecosystemBody')}
-          </p>
-          <div
-            className="mt-8 w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]"
-          >
-            <div className="animate-marquee flex w-max items-center gap-16">
-              {[...marqueeLogos, ...marqueeLogos].map((brand, index) => (
-                <div key={`${brand.logo}-${index}`} className="flex h-10 w-24 shrink-0 items-center justify-center">
-                  <img
-                    src={`/images/brands/${brand.logo}.png`}
-                    alt={brand.name}
-                    className="max-h-full max-w-full object-contain opacity-70 mix-blend-multiply"
-                    onError={(e) => {
-                      e.currentTarget.style.display = 'none'
-                    }}
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
     </section>
