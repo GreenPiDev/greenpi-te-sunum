@@ -114,8 +114,8 @@
     "events": [
       { "title": "TE Connectivity Days", "body": "İstanbul veya Ankara'da, mühendisleri, pano imalatçılarını, OEM'leri, EPC'leri ve sistem entegratörlerini teknik seminerler ve ürün demoları etrafında bir araya getirecek yıllık bir etkinlik önerisi." },
       { "title": "EIF Antalya 2026", "body": "Green Pi Enerji, Kasım 2026'da Antalya'daki EIF Enerji Kongresi & Fuarı'na katılacak — yenilenebilir enerji yatırımcıları, EPC'ler ve sanayi üreticileriyle buluşma." },
-      { "title": "Green Pi Cup", "body": "Atlıspor Kulübü'nde her yıl düzenlenen binicilik sporu sponsorluğu — kurumsal görünürlüğü uzun vadeli ilişki geliştirmeyle birleştiriyor." },
-      { "title": "Ankara Golf Kulübü", "body": "2026'dan itibaren turnuva sponsorluğu — TE Connectivity ile ortak sponsorluğa genişletmeyi hedeflediğimiz bir alan." }
+      { "title": "Green Pi Cup", "body": "Green Pi Enerji'nin Atlıspor Kulübü'nde her yıl düzenlediği binicilik sporu etkinlik sponsorluğu — kurumsal görünürlüğü uzun vadeli ilişki geliştirmeyle birleştiriyor." },
+      { "title": "2026'dan Geleceğe: Golf Sponsorluğu ve Ortaklık Vizyonu", "body": "Green Pi Enerji olarak, 2026 yılında Ankara Golf Kulübü'nde düzenlenen bir turnuvaya sponsor olarak spora ve iş dünyasını bir araya getiren etkinliklere destek veriyoruz. Önümüzdeki yıllarda bu adımı TE Connectivity ile ortak sponsorluklarla geliştirmeyi hedefliyoruz. İki markanın görünürlüğünü güçlendiren, yeni iş ilişkilerine zemin hazırlayan ve spora uzun vadeli katkı sağlayan bir iş birliği oluşturmayı amaçlıyoruz." }
     ]
   },
   "contact": {
@@ -127,5 +127,8 @@
   },
   "footer": {
     "rights": "Tüm hakları saklıdır."
+  },
+  "thanks": {
+    "message": "Vaktinizi ayırdığınız ve bize gösterdiğiniz ilgi için teşekkür ederiz."
   }
 }

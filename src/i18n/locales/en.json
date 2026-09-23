@@ -114,8 +114,8 @@
     "events": [
       { "title": "TE Connectivity Days", "body": "A proposed annual industry event in Istanbul or Ankara, bringing together engineers, panel builders, OEMs, EPCs and system integrators around technical seminars and product demonstrations." },
       { "title": "EIF Antalya 2026", "body": "Green Pi Energy will participate in the EIF Energy Congress & Expo, Antalya, November 2026 — meeting renewable energy investors, EPCs and industrial manufacturers." },
-      { "title": "Green Pi Cup", "body": "An annual equestrian sponsorship at Atlıspor Club, combining corporate visibility with long-term relationship building." },
-      { "title": "Ankara Golf Club", "body": "Tournament sponsorship since 2026 — an area we aim to extend into joint sponsorship with TE Connectivity." }
+      { "title": "Green Pi Cup", "body": "Green Pi Energy's annual equestrian sponsorship at Atlıspor Club, combining corporate visibility with long-term relationship building." },
+      { "title": "From 2026 Onward: A Golf Sponsorship & Partnership Vision", "body": "As Green Pi Energy, we support events that bring sports and business together by sponsoring a tournament at Ankara Golf Club in 2026. In the coming years, we aim to grow this step into joint sponsorships with TE Connectivity — building a collaboration that strengthens the visibility of both brands, lays the groundwork for new business relationships, and contributes to sport over the long term." }
     ]
   },
   "contact": {
@@ -127,5 +127,8 @@
   },
   "footer": {
     "rights": "All rights reserved."
+  },
+  "thanks": {
+    "message": "Thank you for your time and interest in Green Pi Energy."
   }
 }

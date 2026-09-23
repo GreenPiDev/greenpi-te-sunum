@@ -10,7 +10,7 @@ import { Process } from './components/sections/Process'
 import { GrowthStrategy } from './components/sections/GrowthStrategy'
 import { Opportunities } from './components/sections/Opportunities'
 import { Exhibitions } from './components/sections/Exhibitions'
-import { Contact } from './components/sections/Contact'
+import { Thanks } from './components/sections/Thanks'
 import { useSmoothScroll } from './lib/hooks/useSmoothScroll'
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
         <GrowthStrategy />
         <Opportunities />
         <Exhibitions />
-        <Contact />
+        <Thanks />
       </main>
     </>
   )

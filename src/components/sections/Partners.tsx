@@ -82,9 +82,9 @@ export function Partners() {
                   </div>
                   <div className="relative flex h-72 w-full items-center justify-center px-10 sm:h-full sm:w-3/5 sm:px-16">
                     <img
-                      src="/images/brands/aite-fuse-logo.svg"
+                      src="/images/brands/aite-fuse.png"
                       alt={partner.name}
-                      className="h-full w-full object-contain opacity-20"
+                      className="h-full w-full object-contain opacity-40"
                       onError={(e) => {
                         e.currentTarget.style.display = 'none'
                       }}

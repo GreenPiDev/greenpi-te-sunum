@@ -50,11 +50,12 @@ export function About() {
         ref={trackRef}
         className="flex flex-col gap-16 px-6 sm:h-screen sm:flex-row sm:items-center sm:gap-0 sm:px-0"
       >
-        <div className="relative flex flex-col justify-center gap-6 overflow-hidden sm:h-full sm:w-screen sm:shrink-0 sm:px-16 lg:px-28">
+        <div className="relative flex flex-col justify-center gap-6 sm:h-full sm:w-screen sm:shrink-0 sm:px-16 lg:px-28">
           <img
-            src="/images/founder-serhat-celik.jpg"
-            alt={t('about.founderAlt')}
-            className="pointer-events-none absolute inset-y-0 -right-48 h-full w-auto object-contain opacity-15 sm:opacity-20"
+            src="/yuvarlak-logo.png"
+            alt=""
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-y-0 -right-24 my-auto h-3/4 w-auto object-contain opacity-15 sm:opacity-20"
             style={{
               maskImage: 'linear-gradient(to right, transparent, black 35%)',
               WebkitMaskImage: 'linear-gradient(to right, transparent, black 35%)',
@@ -71,10 +72,14 @@ export function About() {
           </div>
         </div>
 
-        {stats.map((stat) => (
+        {stats.map((stat, i) => (
           <div
             key={stat.label}
-            className="flex flex-col justify-center gap-4 border-t border-stone-dim pt-8 sm:h-full sm:w-max sm:shrink-0 sm:border-t-0 sm:border-l sm:px-16 sm:pt-0 lg:px-24"
+            className={
+              i === 0
+                ? 'flex flex-col justify-center gap-4 border-t border-stone-dim pt-8 sm:h-full sm:w-max sm:shrink-0 sm:border-t-0 sm:px-16 sm:pt-0 lg:px-24'
+                : 'flex flex-col justify-center gap-4 border-t border-stone-dim pt-8 sm:h-full sm:w-max sm:shrink-0 sm:border-t-0 sm:border-l sm:px-16 sm:pt-0 lg:px-24'
+            }
           >
             <span className="font-display text-7xl text-green sm:text-9xl">{stat.value}</span>
             <span className="whitespace-pre-line text-sm uppercase tracking-widest text-stone">{stat.label}</span>

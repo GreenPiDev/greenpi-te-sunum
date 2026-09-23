@@ -15,7 +15,6 @@ const links = [
   { id: 'growth', key: 'nav.growth' },
   { id: 'opportunities', key: 'nav.opportunities' },
   { id: 'exhibitions', key: 'nav.exhibitions' },
-  { id: 'contact', key: 'nav.contact' },
 ] as const
 
 const linkIds = links.map((link) => link.id)

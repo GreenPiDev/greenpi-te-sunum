@@ -49,7 +49,7 @@ export const totalTargets = {
   year1: '€850K',
   year2: '€1.50M',
   year3: '€2.625M',
-  year5: '€8.04M',
+  year5: '€8M+',
 }
 
 export type YearKey = 'year1' | 'year2' | 'year3' | 'year5'
@@ -210,7 +210,7 @@ export const growthPhases: GrowthPhase[] = [
     yearKey: 'year5',
     yearLabel: { tr: '5. Yıl', en: 'Year 5' },
     phaseTitle: { tr: 'Stratejik Ortaklık & Pazar Liderliği', en: 'Strategic Partnership & Market Leadership' },
-    target: '€8.04M',
+    target: '€8M+',
     body: {
       tr: "Beşinci yıl hedefinin yalnızca €8 milyon üzeri satış hacmi olarak değerlendirilmesini istemiyoruz. Bu noktada Green Pi Energy'nin TE Connectivity ile hedeflediği ilişki, uzun vadeli, stratejik ve sürdürülebilir bir pazar geliştirme ortaklığıdır: TE Connectivity'nin Türkiye'deki en önemli pazar geliştirme ve çözüm ortaklarından biri olmak.",
       en: "We don't want the fifth-year target to be seen merely as more than €8 million in sales volume. At this point, the relationship Green Pi Energy aims to build with TE Connectivity is a long-term, strategic and sustainable market development partnership — to become one of TE Connectivity's key market development and solution partners in Türkiye.",
