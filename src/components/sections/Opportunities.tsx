@@ -55,8 +55,14 @@ export function Opportunities() {
   }, [])
 
   return (
-    <section id="opportunities" ref={sectionRef} data-nav-theme="light" className="relative bg-canvas px-6 py-24 text-ink sm:px-10 sm:py-36">
-      <div className="mx-auto max-w-5xl">
+    <section id="opportunities" ref={sectionRef} data-nav-theme="light" className="relative overflow-hidden bg-canvas px-6 py-24 text-ink sm:px-10 sm:py-36">
+      <img
+        src="/images/brands/te-arkaplansiz.png"
+        alt=""
+        aria-hidden="true"
+        className="pointer-events-none absolute -top-10 right-0 h-48 w-auto object-contain opacity-20 sm:-top-16 sm:right-6 sm:h-80 md:h-[26rem]"
+      />
+      <div className="relative mx-auto max-w-5xl">
         <p className="text-xs uppercase tracking-[0.3em] text-blue">{t('opportunities.kicker')}</p>
         <h2 className="font-display mt-4 max-w-3xl text-4xl leading-tight sm:text-6xl">
           {t('opportunities.title')}
